@@ -1,4 +1,144 @@
 % Testfälle und Testszenarien
 \section{Testfälle und Testszenarien}
 \subsection{Testfälle}
+
+Für jede Funktion existiert mindestens ein Testfall.
+\newline
+\textbf{Basis-Testfälle:}
+\begin{itemize}
+    \item /T010/ Die Schnittstelle wird in einem Browser geöffnet 
+    \item /T020/ Laden der Cookies
+    \item /T030/ Akzeptieren der Cookies
+    \item /T040/ Laden der Deutschlandkarte (/F010/)
+    \item /T050/ Laden einer Karte der Umgebung des Benutzers (10km Umkreis)
+    \item /T060/ Anzeigen der Toolbar(/F020/)
+    \item /T070/ Anzeigen der Suchleiste
+    \item /T075/ Anzeigen einer Kartenlegende (/F100/)
+    \item /T080/ In der Suchleiste wird eine Stadt eingegeben. (/F030/)
+    \item /T090/ In der Suchleiste wird eine Postleitzahl eingegeben. (/F030/)
+    \item /T100/ Auswahl eines anderen Kartenoverlays (/F050/)
+    \item /T110/ Aufrufen der Daten eines Sensors über die Karte
+    \item /T111/ Markieren der Sensoren im aktuellen Kartenausschnitt (/F040/)
+    \item /T115/ Anzeigen der Daten eines Sensors ( /F130/, /F110/)
+    \item /T120/ Aufrufen des Expertenmoduses (/F210/)
+    \item /T130/ Aufrufen der Histogramme (/F140/, /F200/)
+    \item /T140/ Aufkappen der Toolbar
+    \item /T150/ Aufrufen der DIY Anleitungen für Sensoren über die Toolbar
+    \item /T160/ Aufrufen des Dark-Mode über die Toolbar
+    \item /T170/ Änderung der Sprach-Einstellung über die Toolbar
+    \item /T180/ Stresstest durch wildes drücken der Tasten
+    \item /T190/ Aktualisieren der Daten
+    \item /T200/ Speichern der Nutzerdaten für erneutes Laden der Schnittstelle zu einem anderen Zeitpunkt(/F160/, /F180/, /F230/)
+    \item /T205/ Schließen der Sensordaten
+    \item /T210/ Schließen der Schnittstelle
+    \item /T220/ Erneutes Laden der Schnittstelle (/F170/, /F190/, /F240/)
+    
+\end{itemize}
 \subsection{Testszenarien}
+
+\textbf{Testszenario 1: Normaler Aufruf}
+\newline
+Ein unerfahrener Benutzer startet die Schnittstelle und möchte die aktuellen Feinstaubdaten seines aktuellen Standortes erfahren. Das gelingt ihm auch.
+\begin{itemize}
+    \item 1. /T010/ Starten der Schnittstelle
+    \item 2. /T030/ Akzeptieren der Cookies
+    \item 3. /T140/ Aufklappen der Toolbar
+    \item 4. /T100/ Auswahl des Feinstaub-Overlays in der Toolbar
+    \item 5. /T110/ Auswahl der Sensoren
+    \item 6. /T115/ Daten zu diesem Sensor werden angezeigt
+    \item 7. /T205/ Schließen der Sensordaten
+    \item 8. /T210/ Schließen er Schnittstelle
+\end{itemize}
+
+\textbf{Testszenario 2: Erfahrener Nutzer (Experte)}
+\newline
+Ein Benutzer der sich mit Sensoren etc. auskennt besucht die Schnittstelle und informiert sich über den Expertenmodus zu den Sensoren in Stadt A weiter.
+\begin{itemize}
+    \item 1. /T010/ Starten der Schnittstelle
+    \item 2. /T030/ Laden der Karte der Umgebung des Nutzers.
+    \item 3. /T040/ Stadt A in Suchleiste eingegeben.
+    \item 4. /T020/ Toolbar wird aufgeklappt
+    \item 5. /T020/ Auswahl des Expertenmodus über die Toolbar
+    \item 6. /T020/ Toolbar wird zugeklappt
+    \item 7. /T020/ Auswahl eines Sensors.
+    \item 8. /T020/ Daten zu diesem Sensor werden angezeigt
+    \item 9. /T020/ Schließen der Sensordaten
+    \item 13. /T020/Schließen der Schnittstelle
+\end{itemize}
+
+\textbf{Testszenario 3: Mehrsprachig}
+\newline
+Ein Benutzer möchte die Schnittstelle auf Englisch angezeigt bekommen. Nach erfolgreicher Änderung wird mit Testszenario 1 weitergemacht.
+\begin{itemize}
+    \item 1. /T010/ Starten der Schnittstelle
+    \item 2. /T010/ Akzeptieren der Cookies
+    \item 3. /T010/ Toolbar wird aufgeklappt
+    \item 4. /T010/ Änderung der Spracheinstellung
+    \item Weiter mit Testszenario 1 Schritt 4
+\end{itemize}
+
+\textbf{Testszenario 4: Öffnen eines anderen Tabs}
+\newline
+Ein Benutzer öffnet während die Schnittstelle offen ist einen weiteren Tab. Nach einiger Zeit kehrt der Nutzer zurück zu dieser Schnittstelle
+\begin{itemize}
+    \item 
+\end{itemize}
+
+\textbf{Testszenario 5: Eingabe einer nichtzulässigen Postleitzahl}
+\newline
+Der Benutzer gibt bei seiner Suche eine Postleitzahl ein, die so in Deutschland nicht existiert. Nachdem dieser darüber informiert wurde gibt er eine zulässige Postleitzahl ein.
+\begin{itemize}
+    \item 
+\end{itemize}
+
+\textbf{Testszenario 6: Historische Daten}
+\newline
+Ein Benutzer möchte auf die historischen Daten ,in Form eines Histogramms, seines aktuellen Standortes zugreifen.
+\begin{itemize}
+    \item 
+\end{itemize}
+
+\textbf{Testszenario 7: Dark Mode}
+\newline
+Ein Benutzer möchte den Dark Mode aktivieren. Nach erfolgreicher Änderung wird mit Testszenario 1 weitergemacht.
+\begin{itemize}
+    \item 1. /T010/ Starten der Schnittstelle
+    \item 2. /T030/ Laden der Karte der Umgebung des Nutzers.
+    \item 3. /T020/ Aufklappen der Toolbar
+    \item 4. /T020/ Änderung zum Dark Mode
+    \item 5. Weitermachen mit Testszenario 1 Schritt 4.
+\end{itemize}
+
+\textbf{Testszenario 8: Daten einer anderen Stadt}
+\newline
+Ein Benutzer möchte auf die Daten einer Stadt zugreifen, die nicht seinem aktuellen Standort entspricht. Nach auswählen der Stadt wird mit Testszenario 1 weitergemacht.
+\begin{itemize}
+    \item 
+\end{itemize}
+
+\textbf{Testszenario 9: DIY Sensor}
+\newline
+Ein Benutzer hat Interesse an einem DIY Sensor.
+\begin{itemize}
+     \item 1. /T010/ Starten der Schnittstelle
+    \item 2. /T030/ Laden der Karte der Umgebung des Nutzers.
+    \item 3. /T020/ Aufklappen der Toolbar
+    \item 4. /T020/ Klick auf die DIY-Sensor-Anleitung.
+    \item 5. /T020/ Öffnen der Anleitung
+    \item 6. /T020/ Schließen der Schnittstelle
+\end{itemize}
+
+\textbf{Testszenario 10: Wechseln von Sensor A zu Sensor B}
+\newline
+Ein Benutzer will bei seinem Besuch der Schnittstelle zwischen den Unterschiedlichen Sensoren herumschalten. 
+\begin{itemize}
+    \item
+\end{itemize}
+
+\textbf{Testszenario 11: Anzeigen der Daten mehrerer Sensoren}
+\newline
+Ein Benutzer möchte die Durchschnittswerte aller ausgewählten Sensoren sehen.
+\begin{itemize}
+    \item 1. /T010/ Starten der Schnittstelle
+    \item 2. /T030/ Laden der Karte der Umgebung des Nutzers.
+\end{itemize}
