@@ -1,6 +1,8 @@
 % Systemmodell
 \section{Systemmodell}
 Die Anwendung st nach dem prinzip des MVC-Entwurfmusters aufgebaut. Das folgende Diagramm zeigt, wie die Software gegliedert ist.
+Durch die Verwendung von MVC wird die Architektur strukturierter und Modifikationen am Programm werden vereinfacht. 
+%TODO: Add Glossar for MVC
 \begin{figure}
     \begin{tikzpicture}[node distance=2cm]
 
@@ -44,7 +46,7 @@ Die Anwendung st nach dem prinzip des MVC-Entwurfmusters aufgebaut. Das folgende
         \end{scope}
 
             
-        \draw[<->] (M.east) -- (C.west);
+        \draw[<->] (M.east) -- (C.west) node[midway,above,scale=0.7] {REST} node[midway,below,scale=0.8] {API};
         \draw[<->] (C.east) -- (V.west);
         \draw[<-] (Datenbank.south) -- (Sensoren.north);
         \draw[<->] (Frontend.south) -- (Browser.north);
@@ -52,3 +54,14 @@ Die Anwendung st nach dem prinzip des MVC-Entwurfmusters aufgebaut. Das folgende
     \end{tikzpicture}
     \caption{Diagram des System-Aufbaus}
 \end{figure}
+\begin{itemize}
+    \item \textbf{Model:} Im Model findet die Datenhaltung statt. Alle durch die Sensoren gesammelten Daten werden in der Datenbank nach dem Sensorthings-Standard gespeichert. Die Datenhaltung wird in \softwarename nicht implementiert.
+        Zum Controller hin ist das Modell über die REST-API angebunden.
+        %TODO: Glossar for Rest-API
+    \item \textbf{Controller:} Der Controller bereitet die Daten für die Darstellung auf und führt Operationen aus.
+        Das VisAQ-Backend läd und zwischenspeichert die die Daten der Sensoren aus der Datenbank. Das Backend sorgt somit auch dafür, dass die Nutzer bei der Anzeige der Daten nicht lange auf die Datenbank warten müssen, sondern die daten schnellstmöglich gezeigt bekommen.
+
+    \item \textbf{View:} View organisiert die Anzeige der Daten für den Nutzer.
+        Das VisAQ-Frontend läuft auf dem Webserver und brechnet in Abstimmung mit dem Controller die Angezeigten Daten.
+        Im Browser des Nutzers werden werden die Daten schlussendlich angezeigt.
+\end{itemize}
