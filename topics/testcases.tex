@@ -89,113 +89,113 @@ Die Testszenarien beinhalten die Testfälle.
 \textbf{Testszenario 1: Normaler Aufruf}
 \newline
 Ein unerfahrener Benutzer startet die Schnittstelle und möchte die aktuellen Feinstaubdaten seines aktuellen Standortes erfahren. Das gelingt ihm auch.
-\begin{itemize} [noitemsep]
-    \item 1. /T010/ Starten der Schnittstelle
-    \item 2. /T040/ Laden der Deutschlandkarte
-    \item 3. /T020/ Laden der Cookies
-    \item 4. /T030/ Akzeptieren der Cookies
-    \item 5. /T070/ Aufklappen der Toolbar
-    \item 6. /T120/ Auswahl des Feinstaub-Overlays in der Toolbar
-    \item 7. /T130/ Anzeigen des Overlays auf der Karte
-    \item 8. /T180/ Zoomen auf der Karte
-    \item 9. /T140/ Auswahl der Sensoren
-    \item 10. /T160/ Daten zu diesen Sensoren werden angezeigt
-    \item 11. /T210/ Schließen der Sensordaten
-    \item 12. /T220/ Schließen er Schnittstelle
-\end{itemize}
+\begin{enumerate} [noitemsep]
+    \item /T010/ Starten der Schnittstelle
+    \item /T040/ Laden der Deutschlandkarte
+    \item /T020/ Laden der Cookies
+    \item /T030/ Akzeptieren der Cookies
+    \item /T070/ Aufklappen der Toolbar
+    \item /T120/ Auswahl des Feinstaub-Overlays in der Toolbar
+    \item /T130/ Anzeigen des Overlays auf der Karte
+    \item /T180/ Zoomen auf der Karte
+    \item /T140/ Auswahl der Sensoren
+    \item /T160/ Daten zu diesen Sensoren werden angezeigt
+    \item /T210/ Schließen der Sensordaten
+    \item /T220/ Schließen er Schnittstelle
+\end{enumerate}
 
 \textbf{Testszenario 2: Erfahrener Nutzer (Experte)}
 \newline
 Ein Benutzer der sich mit Sensoren etc. auskennt besucht die Schnittstelle und informiert sich über den Expertenmodus zu den Sensoren in Stadt A weiter.
-\begin{itemize} [noitemsep]
-    \item 1. /T230/ Erneutes Laden der Schnittstelle
-    \item 2. /T050/ Laden der Karte mit dem gespeicherten Standort.
-    \item 3. /T100/ Stadt A in Suchleiste eingegeben.
-    \item 4. /T070/ Toolbar wird aufgeklappt
-    \item 5. /T290/ Auswahl des Expertenmodus über die Toolbar
-    \item 6. /T070/ Toolbar wird zugeklappt
-    \item 7. /T150/ Auswahl eines Sensors.
-    \item 8. /T160/ Daten zu diesem Sensor werden angezeigt
-    \item 9. /T210/ Schließen der Sensordaten
-    \item 10. /T220/ Schließen der Schnittstelle
-\end{itemize}
+\begin{enumerate} [noitemsep]
+    \item /T230/ Erneutes Laden der Schnittstelle
+    \item /T050/ Laden der Karte mit dem gespeicherten Standort.
+    \item /T100/ Stadt A in Suchleiste eingegeben.
+    \item /T070/ Toolbar wird aufgeklappt
+    \item /T290/ Auswahl des Expertenmodus über die Toolbar
+    \item /T070/ Toolbar wird zugeklappt
+    \item /T150/ Auswahl eines Sensors.
+    \item /T160/ Daten zu diesem Sensor werden angezeigt
+    \item /T210/ Schließen der Sensordaten
+    \item /T220/ Schließen der Schnittstelle
+\end{enumerate}
 
 \textbf{Testszenario 3: Mehrsprachig}
 \newline
 Ein Benutzer möchte die Schnittstelle auf Englisch angezeigt bekommen. Nach erfolgreicher Änderung wird mit Testszenario 1 weitergemacht.
-\begin{itemize} [noitemsep]
-    \item 1. /T230/ Erneutes starten der Schnittstelle
-    \item 2. /T050/ Laden der Karte mit dem gespeicherten Standort.
-    \item 3. /T070/ Toolbar wird aufgeklappt
-    \item 4. /T280/ Änderung der Spracheinstellung
-    \item 5. Weiter mit Testszenario 1 Schritt 6
-\end{itemize}
+\begin{enumerate} [noitemsep]
+    \item /T230/ Erneutes starten der Schnittstelle
+    \item /T050/ Laden der Karte mit dem gespeicherten Standort.
+    \item /T070/ Toolbar wird aufgeklappt
+    \item /T280/ Änderung der Spracheinstellung
+    \item Weiter mit Testszenario 1 Schritt 6
+\end{enumerate}
 
 \textbf{Testszenario 4: Eingabe einer nichtzulässigen Postleitzahl}
 \newline
 Der Benutzer gibt bei seiner Suche eine Postleitzahl ein, die so in Deutschland nicht existiert. Nachdem dieser darüber informiert wurde gibt er eine zulässige Postleitzahl ein.
-\begin{itemize} [noitemsep]
-    \item 1. /T230/ Erneutes starten der Schnittstelle
-    \item 2. /T050/ Laden der Karte mit dem gespeicherten Standort.
-    \item 3. /T110/ Postleitzahl in Suchleiste eingegeben.
-    \item 4. /T190/ Fehlermeldung und Aufforderung zur Eingabe einer gültigen Postleitzahl
-    \item 5. /T110/ Eingabe einer gültigen Postleitzahl
-    \item 6. Weiter mit Testszenario 1 Schritt 6
-\end{itemize}
+\begin{enumerate} [noitemsep]
+    \item /T230/ Erneutes starten der Schnittstelle
+    \item /T050/ Laden der Karte mit dem gespeicherten Standort.
+    \item /T110/ Postleitzahl in Suchleiste eingegeben.
+    \item /T190/ Fehlermeldung und Aufforderung zur Eingabe einer gültigen Postleitzahl
+    \item /T110/ Eingabe einer gültigen Postleitzahl
+    \item Weiter mit Testszenario 1 Schritt 6
+\end{enumerate}
 
 \textbf{Testszenario 5: Historische Daten}
 \newline
 Ein erfahrener Benutzer möchte auf die historischen Daten ,in Form eines Histogramms, seines aktuellen Standortes zugreifen.
-\begin{itemize} [noitemsep]
-    \item 1. /T010/ Starten der Schnittstelle
-    \item 2. /T030/ Laden der Karte mit dem gespeicherten Standort.
-    \item 3. /T040/ Aktuellen Standort in Suchleiste eingegeben.
-    \item 4. /T150/ Auswahl der für den Benutzer interessanten Sensoren.
-    \item 5. /T170/ Im Sensordatenfenster den gewünschten Zeitraum auswählen.
-    \item 6. /T220/ Schnittstelle schließen
-\end{itemize}
+\begin{enumerate} [noitemsep]
+    \item /T010/ Starten der Schnittstelle
+    \item /T030/ Laden der Karte mit dem gespeicherten Standort.
+    \item /T040/ Aktuellen Standort in Suchleiste eingegeben.
+    \item /T150/ Auswahl der für den Benutzer interessanten Sensoren.
+    \item /T170/ Im Sensordatenfenster den gewünschten Zeitraum auswählen.
+    \item /T220/ Schnittstelle schließen
+\end{enumerate}
 
 \textbf{Testszenario 6: Dark Mode}
 \newline
 Ein Benutzer möchte den Dark Mode aktivieren. Nach erfolgreicher Änderung wird mit Testszenario 1 weitergemacht.
-\begin{itemize} [noitemsep]
-    \item 1. /T230/ Erneutes starten der Schnittstelle
-    \item 2. /T200/ Laden des zuletzt genutzten Standortes.
-    \item 3. /T070/ Aufklappen der Toolbar
-    \item 4. /T270/ Änderung zum Dark Mode
-    \item 5. Weitermachen mit Testszenario 1 Schritt 6.
-\end{itemize}
+\begin{enumerate} [noitemsep]
+    \item /T230/ Erneutes starten der Schnittstelle
+    \item /T200/ Laden des zuletzt genutzten Standortes.
+    \item /T070/ Aufklappen der Toolbar
+    \item /T270/ Änderung zum Dark Mode
+    \item Weitermachen mit Testszenario 1 Schritt 6.
+\end{enumerate}
 
 \textbf{Testszenario 7: DIY Sensor}
 \newline
 Ein Benutzer hat Interesse an einem DIY Sensor.
-\begin{itemize} [noitemsep]
-    \item 1. /T230/ Erneutes Starten der Schnittstelle
-    \item 2. /T050/ Laden der Karte der Umgebung des Nutzers.
-    \item 3. /T070/ Aufklappen der Toolbar
-    \item 4. /T260/ Öffnen der Anleitung
-    \item 5. /T220/ Schließen der Schnittstelle
-\end{itemize}
+\begin{enumerate} [noitemsep]
+    \item /T230/ Erneutes Starten der Schnittstelle
+    \item /T050/ Laden der Karte der Umgebung des Nutzers.
+    \item /T070/ Aufklappen der Toolbar
+    \item /T260/ Öffnen der Anleitung
+    \item /T220/ Schließen der Schnittstelle
+\end{enumerate}
 
 \textbf{Testszenario 8: Wechseln von Sensor A zu Sensor B}
 \newline
 Ein Benutzer will bei seinem Besuch der Schnittstelle zwischen den Unterschiedlichen Sensoren herumschalten. 
-\begin{itemize} [noitemsep]
-    \item 1. /T230/ Starten der Schnittstelle
-    \item 2. /T050/ Laden der Karte mit dem zuletzt genutzten Standort des Nutzers.
-    \item 3. /T040/ Aktueller Standort wird in die Suchleiste eingegeben
-    \item 4. /T155/ Nutzer wählt manuell einen Sensor aus 
-    \item 5. /T155/ Nutzer wählt mehrere Sensoren aus
-    \item 6. Weiter mit Testszenario 1 Schritt 6
-\end{itemize}
+\begin{enumerate} [noitemsep]
+    \item /T230/ Starten der Schnittstelle
+    \item /T050/ Laden der Karte mit dem zuletzt genutzten Standort des Nutzers.
+    \item /T040/ Aktueller Standort wird in die Suchleiste eingegeben
+    \item /T155/ Nutzer wählt manuell einen Sensor aus 
+    \item /T155/ Nutzer wählt mehrere Sensoren aus
+    \item Weiter mit Testszenario 1 Schritt 6
+\end{enumerate}
 
 \textbf{Testszenario 9: Anzeigen der Daten mehrerer Sensoren}
 \newline
 Ein Benutzer, der die Seite bereits besucht hat, möchte die Durchschnittswerte aller ausgewählten Sensoren für seinen aktuellen Standort sehen.
-\begin{itemize} [noitemsep]
-    \item 1. /T230/ Starten der Schnittstelle
-    \item 2. /T050/ Laden der Karte mit dem zuletzt genutzten Standort des Nutzers.
-    \item 3. /T040/ Aktueller Standort wird in die Suchlesite eingegeben
-    \item 4. /T150/ Sensoren werden markiert
-    \item 5. /T300/ Anzeigen der isopolierten Daten
-\end{itemize}
+\begin{enumerate} [noitemsep]
+    \item /T230/ Starten der Schnittstelle
+    \item /T050/ Laden der Karte mit dem zuletzt genutzten Standort des Nutzers.
+    \item /T040/ Aktueller Standort wird in die Suchlesite eingegeben
+    \item /T150/ Sensoren werden markiert
+    \item /T300/ Anzeigen der isopolierten Daten
+\end{enumerate}
