@@ -1,4 +1,218 @@
 % Testfälle und Testszenarien
 \section{Testfälle und Testszenarien}
 \subsection{Testfälle}
+
+Für jede Funktion existiert mindestens ein Testfall.
+\newline
+\subsection{Basis-Testfälle}
+\begin{tabularx}{\textwidth}{| c | X | c |}
+	\hline
+	\textbf{Nr.} & 
+    \textbf{Beschreibung} &
+    \textbf{Funktion}\\
+    \hline
+     /T010/ & Die Schnittstelle wird in einem Browser geöffnet & /F010/, /F020/ \\
+     \hline
+     /T020/ & Laden der \glspl{Cookie} & /D040/, /D050/, /D060/ \\
+     \hline
+     /T030/ & Akzeptieren der \glspl{Cookie} &  /D040/, /D050/, /D060/ \\
+     \hline
+     /T040/ & Laden der Deutschlandkarte beim Erstbesuch& /F010/ \\
+     \hline
+     /T050/ & Laden einer Karte der zuletzt genutzten Umgebung des Benutzers & /D040/, /F010/ \\
+     \hline
+     /T060/ & Anzeigen der \gls{Toolbar} & /F020/ \\
+     \hline
+     /T070/ & Aufklappen der \gls{Toolbar} für Erweiterte Funktionen & /F020/ \\
+     \hline
+     /T080/ & Anzeigen der Suchleiste & /F020/ \\
+     \hline
+     /T090/ & Anzeigen einer Kartenlegende & /F100/ \\
+     \hline
+     /T100/ & In der Suchleiste wird eine Stadt eingegeben. & /F030/ \\
+     \hline
+     /T0110/ & In der Suchleiste wird eine Postleitzahl eingegeben &  /F030/ \\
+     \hline
+     /T120/ & Auswahl eines der vier \glspl{Kartenoverlay} & /F050/ \\
+     \hline
+     /T130/ & Anzeigen der \glspl{Kartenoverlay} & /F060/, /F070/ ,/F080/, /F090/ \\
+     \hline
+     /T140/ & Anzeigen der Daten von mehreren \glspl{Sensor} über die Karte & /F040/ \\
+     \hline
+     /T150/ & Markieren der \glspl{Sensor} im aktuellen Kartenausschnitt & /F040/ \\
+     \hline 
+     /T155/ & Selbstständiges markieren der \glspl{Sensor} & \\
+     \hline
+     /T160/ & Anzeigen der Daten eines Sensors &  /F130/, /F110/ \\
+     \hline
+     /T170/ & Aufrufen der Zeitdiagramme & /F130/, /F140/, /F200/ \\
+     \hline
+     /T180/ & Zoomen auf der Karte & /F015/ \\
+     \hline
+     /T190/ & Eingabe nicht bekannter Städte/Postleitzahlen in die Suchleiste & /F030/ \\
+     \hline
+     /T200/ & Speichern der Nutzerdaten für erneutes Laden der Schnittstelle zu einem anderen Zeitpunkt & /F160/, /F180/, /F230/ \\
+     \hline
+     /T210/ & Schließen der Daten der \glspl{Sensor} & \\
+     \hline
+     /T220/ & Schließen der Schnittstelle & /F110/ \\
+     \hline
+     /T230/ & Erneutes Laden der Schnittstelle & /F170/, /F190/, /F250/ \\
+     \hline
+    \end{tabularx}
+
+\subsection{Erweiterte-Testfälle}
+\begin{tabularx}{\textwidth}{| c | X | c |}
+    \hline
+    \textbf{Nr.} & 
+    \textbf{Beschreibung} &
+    \textbf{Funktion}\\
+    \hline 
+    /T240/ & Stresstest durch wildes drücken der Tasten & \\
+    \hline      
+    /T250/ & Speichern der Nutzerdaten für erneutes Laden der Schnittstelle zu einem anderen Zeitpunkt & /F160/, /F180/, /F240/ \\
+    \hline  
+    /T260/ & Aufrufen der \GLS{DIY} Anleitungen für \glspl{Sensor} über die \gls{Toolbar} & /F020/ \\
+    \hline
+    /T270/ & (De-)aktivieren des Dark-Mode über die \gls{Toolbar} & /F020/ \\
+    \hline
+    /T280/ & Änderung der Sprach-Einstellung über die \gls{Toolbar} & /F020/ \\
+    \hline
+    /T290/ & (De-)aktivieren des Expertenmoduses & /F120/, /F220/ \\
+    \hline
+    /T300/ & Anzeigen interpolierter Daten & /F060/, /F070/, /F080/, /F090/ \\
+    \hline
+    /T310/ & Anzeigen von allgemeinen Informationen zu \glspl{Schadstoffwert}n und Gesundheitsrisiken & /F210/, /F230/ \\
+    \hline
+\end{tabularx}
+
 \subsection{Testszenarien}
+Die Testszenarien beinhalten die Testfälle. 
+\textbf{Testszenario 1: Normaler Aufruf}
+\newline
+Ein unerfahrener Benutzer startet die Schnittstelle und möchte die aktuellen \gls{Feinstaub}daten seines aktuellen Standortes erfahren. Das gelingt ihm auch.
+\begin{enumerate} [noitemsep]
+    \item /T010/ Starten der Schnittstelle.
+    \item /T040/ Laden der Deutschlandkarte.
+    \item /T020/ Laden der \glspl{Cookie}.
+    \item /T030/ Akzeptieren der \glspl{Cookie}.
+    \item /T070/ Aufklappen der \gls{Toolbar}.
+    \item /T120/ Auswahl des \gls{Feinstaub}-Overlays in der \gls{Toolbar}.
+    \item /T130/ Anzeigen des Overlays auf der Karte.
+    \item /T180/ Zoomen auf der Karte.
+    \item /T140/ Auswahl der \glspl{Sensor}.
+    \item /T160/ Daten zu diesen \glspl{Sensor} werden angezeigt.
+    \item /T210/ Schließen der Sensordaten.
+    \item /T220/ Schließen er Schnittstelle.
+\end{enumerate}
+
+\textbf{Testszenario 2: Erfahrener Nutzer (Experte)}
+\newline
+Ein Benutzer der sich mit \glspl{Sensor} etc. auskennt besucht die Schnittstelle und informiert sich über den Expertenmodus zu den \glspl{Sensor} in Stadt A weiter.
+\begin{enumerate} [noitemsep]
+    \item /T230/ Erneutes Laden der Schnittstelle.
+    \item /T050/ Laden der Karte mit dem gespeicherten Standort.
+    \item /T100/ Stadt A in Suchleiste eingegeben.
+    \item /T070/ \gls{Toolbar} wird aufgeklappt.
+    \item /T290/ Auswahl des Expertenmodus über die \gls{Toolbar}.
+    \item /T070/ \gls{Toolbar} wird zugeklappt.
+    \item /T150/ Auswahl eines Sensors.
+    \item /T160/ Daten zu diesem Sensor werden angezeigt.
+    \item /T210/ Schließen der Sensordaten.
+    \item /T220/ Schließen der Schnittstelle.
+\end{enumerate}
+
+\textbf{Testszenario 3: Mehrsprachig}
+\newline
+Ein Benutzer möchte die Schnittstelle auf Englisch angezeigt bekommen. Nach erfolgreicher Änderung wird mit Testszenario 1 weitergemacht.
+\begin{enumerate} [noitemsep]
+    \item /T230/ Erneutes starten der Schnittstelle.
+    \item /T050/ Laden der Karte mit dem gespeicherten Standort.
+    \item /T070/ \gls{Toolbar} wird aufgeklappt.
+    \item /T280/ Änderung der Spracheinstellung.
+    \item Weiter mit Testszenario 1 Schritt 6.
+\end{enumerate}
+
+\textbf{Testszenario 4: Eingabe einer nichtzulässigen Postleitzahl}
+\newline
+Der Benutzer gibt bei seiner Suche eine Postleitzahl ein, die so in Deutschland nicht existiert. Nachdem dieser darüber informiert wurde gibt er eine zulässige Postleitzahl ein.
+\begin{enumerate} [noitemsep]
+    \item /T230/ Erneutes starten der Schnittstelle.
+    \item /T050/ Laden der Karte mit dem gespeicherten Standort.
+    \item /T110/ Postleitzahl in Suchleiste eingegeben.
+    \item /T190/ Fehlermeldung und Aufforderung zur Eingabe einer gültigen Postleitzahl.
+    \item /T110/ Eingabe einer gültigen Postleitzahl.
+    \item Weiter mit Testszenario 1 Schritt 6.
+\end{enumerate}
+
+\textbf{Testszenario 5: Historische Daten}
+\newline
+Ein erfahrener Benutzer möchte auf die historischen Daten ,in Form eines Zeitdiagramms, seines aktuellen Standortes zugreifen.
+\begin{enumerate} [noitemsep]
+    \item /T010/ Starten der Schnittstelle
+    \item /T030/ Laden der Karte mit dem gespeicherten Standort.
+    \item /T040/ Aktuellen Standort in Suchleiste eingegeben.
+    \item /T150/ Auswahl der für den Benutzer interessanten \glspl{Sensor}.
+    \item /T170/ Im Sensordatenfenster den gewünschten Zeitraum auswählen.
+    \item /T220/ Schnittstelle schließen.
+\end{enumerate}
+
+\textbf{Testszenario 6: Dark Mode}
+\newline
+Ein Benutzer möchte den Dark Mode aktivieren. Nach erfolgreicher Änderung wird mit Testszenario 1 weitergemacht.
+\begin{enumerate} [noitemsep]
+    \item /T230/ Erneutes starten der Schnittstelle
+    \item /T200/ Laden des zuletzt genutzten Standortes.
+    \item /T070/ Aufklappen der \gls{Toolbar}.
+    \item /T270/ Änderung zum Dark Mode.
+    \item Weitermachen mit Testszenario 1 Schritt 6.
+\end{enumerate}
+
+\textbf{Testszenario 7: \GLS{DIY} Sensor}
+\newline
+Ein Benutzer hat Interesse an einem \GLS{DIY} Sensor.
+\begin{enumerate} [noitemsep]
+    \item /T230/ Erneutes Starten der Schnittstelle.
+    \item /T050/ Laden der Karte der Umgebung des Nutzers.
+    \item /T070/ Aufklappen der \gls{Toolbar}.
+    \item /T260/ Öffnen der Anleitung.
+    \item /T220/ Schließen der Schnittstelle.
+\end{enumerate}
+
+\textbf{Testszenario 8: Wechseln von Sensor A zu Sensor B}
+\newline
+Ein Benutzer will bei seinem Besuch der Schnittstelle zwischen den Unterschiedlichen \glspl{Sensor} herumschalten. 
+\begin{enumerate} [noitemsep]
+    \item /T230/ Starten der Schnittstelle.
+    \item /T050/ Laden der Karte mit dem zuletzt genutzten Standort des Nutzers.
+    \item /T040/ Aktueller Standort wird in die Suchleiste eingegeben.
+    \item /T155/ Nutzer wählt manuell einen Sensor aus.
+    \item /T155/ Nutzer wählt mehrere \glspl{Sensor} aus.
+    \item Weiter mit Testszenario 1 Schritt 6.
+\end{enumerate}
+
+\textbf{Testszenario 9: Anzeigen der Daten mehrerer \glspl{Sensor}}
+\newline
+Ein Benutzer, der die Seite bereits besucht hat, möchte die Durchschnittswerte aller ausgewählten \glspl{Sensor} für seinen aktuellen Standort sehen.
+\begin{enumerate} [noitemsep]
+    \item /T230/ Starten der Schnittstelle.
+    \item /T050/ Laden der Karte mit dem zuletzt genutzten Standort des Nutzers.
+    \item /T040/ Aktueller Standort wird in die Suchlesite eingegeben.
+    \item /T150/ \glspl{Sensor} werden markiert.
+    \item /T300/ Anzeigen der isopolierten Daten.
+    \item Weiter mit Testszenario 1 Schritt 6.
+\end{enumerate}
+
+\textbf{Testszenario 10: Gesundheitsrisiken}
+\newline
+Ein Benutzer, der die Seite bereits besucht hat, möchte sich über mögliche Gesundheitsrisiken an seinem Standort und allgemeine Gesundheitsrisiken informieren.
+\begin{enumerate} [noitemsep]
+    \item /T230/ Starten der Schnittstelle.
+    \item /T050/ Laden der Karte mit dem zuletzt genutzten Standort des Nutzers.
+    \item /T040/ Aktueller Standort wird in die Suchlesite eingegeben.
+    \item /T150/ \glspl{Sensor} werden markiert.
+    \item /T310/ Anzeigen der Gesundheitsrisiken für die gewünschte Umgebung.
+    \item /T070/ Aufklappen der \gls{Toolbar}.
+    \item /T310/ Laden einer Seite mit allgemeinen Erklärungen zu den Gesundheitsrisiken.
+    \item /T220/ Schließen der Schnittstelle.
+\end{enumerate}
