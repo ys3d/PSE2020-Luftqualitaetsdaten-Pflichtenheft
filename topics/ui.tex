@@ -9,8 +9,8 @@
 \subsection{Struktur Frontend}
 \label{Struktur Frontend}
 
-Als erste Ansicht der Webapplikation soll eine Deutschlandkarte mit farbigen Overlays geladen werden. Die farbigen Overlays geben hierbei Feinstaubdaten wieder.
-Die Webapplikation kann von einem ausklappbaren Toolbar aus bedient werden. Von dort aus sind die verschiedenen Seiten der Webapplikation erreichbar und deren Funktionen abrufbar. 
+Als erste Ansicht der Webapplikation soll eine Deutschlandkarte mit farbigen \glspl{Kartenoverlays} geladen werden. Die farbigen \glspl{Kartenoverlays} geben hierbei Feinstaubdaten wieder.
+Die Webapplikation kann von einer ausklappbaren Toolbar aus bedient werden. Von dort aus sind die verschiedenen Seiten der Webapplikation erreichbar und deren Funktionen abrufbar. 
 Dabei bieten sich dem Nutzer die hier dargestellten Optionen. Erweiterte Funktionen sind in den folgenden Diagrammen grau hinterlegt.
 
 \begin{tikzpicture}[%
@@ -44,8 +44,8 @@ child { node {Zeitliche Entwicklung}}
 child { node {Definition von Feinstaub}}
 child { node [optional]{Hauptgründe für Feinstaub in Deutschland}}
 child { node [optional]{Gesundheitsrisiken von Feinstaub}}
-child { node {SmartAQnet}}
-child { node [optional]{Verlinkung zu einer Bauanleitung für einen DIY-Sensor}}
+child { node {\glspl{SmartAQnet}}}
+child { node [optional]{Verlinkung zu einer Bauanleitung für einen \glspl{DIY-Sensor}}}
 child { node [optional]{Hilfe Funktion}}
 child { node [optional] {Spracheinstellung}
 	child { node {Deutsch}}
@@ -63,9 +63,9 @@ child { node [optional] {Modus}
 
 \subsubsection{Aktuelle Daten (Startseite)}
 
-''Aktuelle Daten'' zeigt eine Karte von Deutschland mit der der Nutzer interagieren kann. Er kann im Toolbar auswählen welche Luftqualitätsdaten er mit farbigen Overlays auf der Landkarte angezeigt haben möchte. Dabei hat er die Auswahl zwischen Daten zu Feinstaub, Lufttemperatur, Luftdruck und Luftfeuchtigkeit.
-Der Nutzer kann Orte auf der Landkarte suchen. Er kann Sensoren oder Punkte auf der Landkarte auswählen und genauere Luftqualitätsdaten zu ihnen erhalten. Dies soll durch den Sidebar ermöglicht werden.
-Der Sidebar ist ein funktionaler Teil der Seite Aktuelle Daten-Deutschlandkarte. Klickt der Nutzer auf einen Sensor oder einen Punkt auf der Karte öffnet er sich automatisch.
+''Aktuelle Daten'' zeigt eine Karte von Deutschland mit der der Nutzer interagieren kann. Er kann in der Toolbar auswählen welche Luftqualitätsdaten er mit farbigen \glspl{Kartenoverlays} auf der Landkarte angezeigt haben möchte. Dabei hat er die Auswahl zwischen Daten zu Feinstaub, Lufttemperatur, Luftdruck und Luftfeuchtigkeit.
+Der Nutzer kann Orte auf der Landkarte suchen. Er kann Sensoren oder Punkte auf der Landkarte auswählen und genauere Luftqualitätsdaten zu ihnen erhalten. Dies soll durch die Sidebar ermöglicht werden.
+Die Sidebar ist ein funktionaler Teil der Seite Aktuelle Daten-Deutschlandkarte. Klickt der Nutzer auf einen Sensor oder einen Punkt auf der Karte öffnet sie sich automatisch.
 
 \begin{tikzpicture}[%
 grow via three points={one child at (0.5,-0.7) and
@@ -79,12 +79,12 @@ child { node {Suchfunktion Datum}
 	child { node {Messwerte bei ausgewähltem Datum}}
 }
 child [missing] {}
-child { node [optional] {Gesundheitsrisiken bei obigen Messwerten}};
+child { node [optional] {Gesundheitsrisiken zu den Messwerten}};
 \end{tikzpicture}
 
 \subsubsection{Zeitliche Entwicklung}
 
-In ''Zeitliche Entwicklung'' soll es dem Nutzer ermöglicht werden sich mit der zeitlichen Entwicklung der Luftqualität auseinanderzusetzen. Zu diesem Zweck sollen Feinstaubdaten als farbige Overlays auf einer Deutschlandkarte mit Zeitachse angezeigt werden. Der Nutzer durch das Verschieben eines Schalters auf der Zeitachse Messwerte an verschiedenen Zeitpunkten auf der Karte aufrufen.
+In \enquote Zeitliche Entwicklung'' soll es dem Nutzer ermöglicht werden sich mit der zeitlichen Entwicklung der Luftqualität auseinanderzusetzen. Zu diesem Zweck sollen Feinstaubdaten als farbige Overlays auf einer Deutschlandkarte mit Zeitachse angezeigt werden. Der Nutzer durch das Verschieben eines Schalters auf der Zeitachse Messwerte an verschiedenen Zeitpunkten auf der Karte aufrufen.
 
 \begin{tikzpicture}[%
 grow via three points={one child at (0.5,-0.7) and
@@ -106,10 +106,10 @@ Diese Seite soll die Gründe für Feinstaub in Deutschland graphisch darstellen.
 Die Seite ''Gesundheitsrisiken von Feinstaub'' soll dem Nutzer sachlich aufzeigen welche Gesundheitsrisiken durch Feinstaub kurzfristig und langfristig auftreten. Dabei sollen ebenfalls graphische Hilfsmittel eingesetzt werden.
 
 \subsubsection{SmartAQnet}
-An dieser Stelle soll eine kurze Beschreibung über das Projekt SmartAQnet informieren.Ebenso gibt es eine Verlinkung zum Projekt SmartAQnet.
+An dieser Stelle soll eine kurze Beschreibung über das Projekt \glspl{SmartAQnet} informieren.Ebenso gibt es eine Verlinkung zum Projekt \glspl{SmartAQnet}.
 
-\subsubsection{Verlinkung zu einer Bauanleitung für einen DIY-Sensor}
-Verlinkung zu einer Bauanleitung für einen DIY-Sensor.
+\subsubsection{Verlinkung zu einer Bauanleitung für einen \glspl{DIY-Sensor}}
+Verlinkung zu einer Bauanleitung für einen \glspl{DIY-Sensor}.
 
 \subsubsection{Hilfe Funktion}
 Die Hilfe Funktion soll den Nutzer bei der Interaktion mit der Webapplikation unterstützen. Sie soll die Funktionsweise der verschiedenen Seiten kurz und verständlich erklären.
@@ -137,9 +137,9 @@ Der ''Dark Mode'' und der ''Farbenblind Modus'' unterscheiden sich durch speziel
 	
 	\includegraphics[width=0.9\textwidth]{Screenshots/Gesundheitsrisiken}\captionof{figure}{Gesundheitsrisiken von Feinstaub} 
 	
-	\includegraphics[width=0.9\textwidth]{Screenshots/SmartAQnet}\captionof{figure}{SmartAQnet} 
+	\includegraphics[width=0.9\textwidth]{Screenshots/SmartAQnet}\captionof{figure}{\glspl{SmartAQnet}} 
 	
-	\includegraphics[width=0.9\textwidth]{Screenshots/DIY}\captionof{figure}{Verlinkung zu einer Bauanleitung für einen DIY-Sensor} 
+	\includegraphics[width=0.9\textwidth]{Screenshots/DIY}\captionof{figure}{Verlinkung zu einer Bauanleitung für einen \glspl{DIY-Sensor}} 
 \end{center}
 
 \textbf{Anmerkung:}
