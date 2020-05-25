@@ -4,7 +4,7 @@
 
 Für jede Funktion existiert mindestens ein Testfall.
 \newline
-\subsection{Basis-Testfälle:}
+\subsection{Basis-Testfälle}
 \begin{tabularx}{\textwidth}{| c | X | c |}
 	\hline
 	\textbf{Nr.} & 
@@ -45,7 +45,7 @@ Für jede Funktion existiert mindestens ein Testfall.
      \hline
      /T160/ & Anzeigen der Daten eines Sensors &  /F130/, /F110/\\
      \hline
-     /T170/ & Aufrufen der Histogramme & /F130/, /F140/, /F200/\\
+     /T170/ & Aufrufen der Zeitdiagramme & /F130/, /F140/, /F200/\\
      \hline
      /T180/ & Zoomen auf der Karte & \\
      \hline
@@ -57,11 +57,11 @@ Für jede Funktion existiert mindestens ein Testfall.
      \hline
      /T220/ & Schließen der Schnittstelle & \\
      \hline
-     /T230/ & Erneutes Laden der Schnittstelle & /F170/, /F190/, /F240/\\
+     /T230/ & Erneutes Laden der Schnittstelle & /F170/, /F190/, /F250/\\
      \hline
     \end{tabularx}
 
-\subsection{Erweiterte-Testfälle:}
+\subsection{Erweiterte-Testfälle}
 \begin{tabularx}{\textwidth}{| c | X | c |}
     \hline
     \textbf{Nr.} & 
@@ -70,7 +70,7 @@ Für jede Funktion existiert mindestens ein Testfall.
     \hline 
     /T240/ & Stresstest durch wildes drücken der Tasten & \\
     \hline      
-    /T250/ & Speichern der Nutzerdaten für erneutes Laden der Schnittstelle zu einem anderen Zeitpunkt & /F160/, /F180/, /F230/ \\
+    /T250/ & Speichern der Nutzerdaten für erneutes Laden der Schnittstelle zu einem anderen Zeitpunkt & /F160/, /F180/, /F240/ \\
     \hline  
     /T260/ & Aufrufen der DIY Anleitungen für Sensoren über die Toolbar & /F020/\\
     \hline
@@ -78,9 +78,11 @@ Für jede Funktion existiert mindestens ein Testfall.
     \hline
     /T280/ & Änderung der Sprach-Einstellung über die Toolbar & /F020/\\
     \hline
-    /T290/ & (De-)aktivieren des Expertenmoduses & /F120/, /F210/\\
+    /T290/ & (De-)aktivieren des Expertenmoduses & /F120/, /F220/\\
     \hline
     /T300/ & Anzeigen isopolierter Daten & \\
+    \hline
+    /T310/ & Anzeigen von allgemeinen Informationen zu Schadstoffwerten und Gesundheitsrisiken & /F210/, /F230/ \\
     \hline
 \end{tabularx}
 
@@ -145,7 +147,7 @@ Der Benutzer gibt bei seiner Suche eine Postleitzahl ein, die so in Deutschland 
 
 \textbf{Testszenario 5: Historische Daten}
 \newline
-Ein erfahrener Benutzer möchte auf die historischen Daten ,in Form eines Histogramms, seines aktuellen Standortes zugreifen.
+Ein erfahrener Benutzer möchte auf die historischen Daten ,in Form eines Zeitdiagramms, seines aktuellen Standortes zugreifen.
 \begin{enumerate} [noitemsep]
     \item /T010/ Starten der Schnittstelle
     \item /T030/ Laden der Karte mit dem gespeicherten Standort.
@@ -198,4 +200,19 @@ Ein Benutzer, der die Seite bereits besucht hat, möchte die Durchschnittswerte 
     \item /T040/ Aktueller Standort wird in die Suchlesite eingegeben
     \item /T150/ Sensoren werden markiert
     \item /T300/ Anzeigen der isopolierten Daten
+    \item Weiter mit Testszenario 1 Schritt 6
+\end{enumerate}
+
+\textbf{Testszenario 10: Gesundheitsrisiken}
+\newline
+Ein Benutzer, der die Seite bereits besucht hat, möchte sich über mögliche Gesundheitsrisiken an seinem Standort und allgemeine Gesundheitsrisiken informieren.
+\begin{enumerate} [noitemsep]
+    \item /T230/ Starten der Schnittstelle
+    \item /T050/ Laden der Karte mit dem zuletzt genutzten Standort des Nutzers.
+    \item /T040/ Aktueller Standort wird in die Suchlesite eingegeben
+    \item /T150/ Sensoren werden markiert
+    \item /T310/ Anzeigen der Gesundheitsrisiken für die gewünschte Umgebung
+    \item /T070/ Aufklappen der Toolbar
+    \item /T310/ Laden einer Seite mit allgemeinen Erklärungen zu den Gesundheitsrisiken
+    \item /T220/ Schließen der Schnittstelle
 \end{enumerate}
