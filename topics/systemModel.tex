@@ -16,7 +16,7 @@ Durch die Verwendung von MVC wird die Architektur strukturierter und Modifikatio
             \end{scope}
             \begin{scope}[local bounding box=Sensoren]
                 \draw (0.25,0.5) rectangle (4.25,1.5);
-                \node[scale=0.8] at (2.25,1) {Heterogenes Sensor-Netz};
+                \node[scale=0.8] at (2.25,1) {Heterogenes \gls{Sensor}-Netz};
             \end{scope}
         \end{scope}
         
@@ -25,8 +25,12 @@ Durch die Verwendung von MVC wird die Architektur strukturierter und Modifikatio
             \draw (0,0) [dashed] rectangle (4.5,6);
             \node[scale=1] at (2.25,5.5) {Controller};
             \begin{scope}[local bounding box=Backend]
-                \draw (0.25,0.5) rectangle (4.25,4.5);
-                \node[scale=0.8] at (2.25,2.5) {VisAQ Backend};
+                \draw (0.25,2.5) rectangle (4.25,4.5);
+                \node[scale=0.8] at (2.25,3.5) {VisAQ Backend};
+            \end{scope}
+            \begin{scope}[local bounding box=User-Backend]
+                \draw (0.25,0.5) rectangle (4.25,1.5);
+                \node[scale=0.8] at (2.25,1) {Java-Script Controller};
             \end{scope}
         \end{scope}
 
@@ -50,17 +54,17 @@ Durch die Verwendung von MVC wird die Architektur strukturierter und Modifikatio
         \draw[<->] (C.east) -- (V.west);
         \draw[<-] (Datenbank.south) -- (Sensoren.north);
         \draw[<->] (Frontend.south) -- (Browser.north);
+        \draw[<->] (Backend.south) -- (User-Backend.north);
 
     \end{tikzpicture}
     \caption{Diagram des System-Aufbaus}
 \end{figure}
 \begin{itemize}
-    \item \textbf{Model:} Im Model findet die Datenhaltung statt. Alle durch die Sensoren gesammelten Daten werden in der Datenbank nach dem Sensorthings-Standard gespeichert. Die Datenhaltung wird in \softwarename nicht implementiert.
-        Zum Controller hin ist das Modell über die REST-API angebunden.
-        %TODO: Glossar for Rest-API
+    \item \textbf{Model:} Im Model findet die Datenhaltung statt. Alle durch die Sensoren gesammelten Daten werden in der Datenbank nach dem Standard der \gls{SensorThings API} gespeichert. Die Datenhaltung wird in \softwarename nicht implementiert.
+        Zum Controller hin ist das Modell über die \gls{RESTAPI} angebunden.
     \item \textbf{Controller:} Der Controller bereitet die Daten für die Darstellung auf und führt Operationen aus.
         Das VisAQ-Backend läd und zwischenspeichert die die Daten der Sensoren aus der Datenbank. Das Backend sorgt somit auch dafür, dass die Nutzer bei der Anzeige der Daten nicht lange auf die Datenbank warten müssen, sondern die daten schnellstmöglich gezeigt bekommen.
-
+        Das VisAQ-Backend läuft auf dem Webserver. Auf der Seite des Nutzers arbeite das Backend mit einigen wenigen \gls{JavaScript} Controllern des Browsers.
     \item \textbf{View:} View organisiert die Anzeige der Daten für den Nutzer.
         Das VisAQ-Frontend läuft auf dem Webserver und brechnet in Abstimmung mit dem Controller die Angezeigten Daten.
         Im Browser des Nutzers werden werden die Daten schlussendlich angezeigt.
