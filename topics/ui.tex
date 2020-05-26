@@ -9,8 +9,8 @@
 \subsection{Struktur Frontend}
 \label{Struktur Frontend}
 
-Als erste Ansicht der Webapplikation soll eine Deutschlandkarte mit farbigen \glspl{Kartenoverlay} geladen werden. Die farbigen \glspl{Kartenoverlay} geben hierbei Feinstaubdaten wieder.
-Die Webapplikation kann von einer ausklappbaren \gls{Toolbar} aus bedient werden. Von dort aus sind die verschiedenen Seiten der Webapplikation erreichbar und deren Funktionen abrufbar. 
+Als erste Ansicht der Webapplikation soll eine Deutschlandkarte mit farbigen Kartenoverlays geladen werden. Die farbigen Kartenoverlays geben hierbei Feinstaubdaten wieder.
+Die Webapplikation kann von einer ausklappbaren Toolbar aus bedient werden. Von dort aus sind die verschiedenen Seiten der Webapplikation erreichbar und deren Funktionen abrufbar. 
 Dabei bieten sich dem Nutzer die hier dargestellten Optionen. Erweiterte Funktionen sind in den folgenden Diagrammen grau hinterlegt.
 
 \begin{tikzpicture}[%
@@ -64,9 +64,9 @@ child { node [optional] {Modus}
 \subsubsection{Aktuelle Daten (Startseite)}
 
 \enquote{Aktuelle Daten} zeigt eine Karte von Deutschland mit der der Nutzer interagieren kann. 
-Er kann in der \gls{Toolbar} auswählen welche \gls{Luftqualitaetsdaten} er mit farbigen \glspl{Kartenoverlay} auf der Landkarte angezeigt haben möchte. 
+Er kann in der Toolbar auswählen welche \gls{Luftqualitaetsdaten} er mit farbigen Kartenoverlay auf der Landkarte angezeigt haben möchte. 
 Dabei hat er die Auswahl zwischen Daten zu \gls{Feinstaub}, Lufttemperatur, Luftdruck und Luftfeuchtigkeit.
-Der Nutzer kann Städte durch den Stadtnamen oder die Postleitzahl auf der Landkarte suchen. Er kann Sensoren oder Punkte auf der Landkarte auswählen und \glspl{Sensoroverview} zu ihnen erhalten. Dies soll durch die \gls{Sidebar} ermöglicht werden.
+Der Nutzer kann Städte durch den Stadtnamen oder die Postleitzahl auf der Landkarte suchen. Er kann Sensoren oder Punkte auf der Landkarte auswählen und Sensoroverviews zu ihnen erhalten. Dies soll durch die \gls{Sidebar} ermöglicht werden.
 Die \gls{Sidebar} ist ein funktionaler Teil der Seite \enquote{Aktuelle Daten}. Klickt der Nutzer auf einen \enquote{Sensor} oder einen Punkt auf der Karte öffnet sie sich automatisch.
 
 \begin{tikzpicture}[%
@@ -88,7 +88,7 @@ child { node [optional] {Gesundheitsrisiken zu den Messwerten}};
 \subsubsection{Zeitliche Entwicklung}
 
 In \enquote{Zeitliche Entwicklung} soll es dem Nutzer ermöglicht werden sich mit der zeitlichen Entwicklung der Luftqualität auseinanderzusetzen. 
-Zu diesem Zweck sollen Feinstaubdaten als farbige \glspl{Kartenoverlay} auf einer Deutschlandkarte mit Zeitachse angezeigt werden. 
+Zu diesem Zweck sollen Feinstaubdaten als farbige Kartenoverlay auf einer Deutschlandkarte mit Zeitachse angezeigt werden. 
 Der Nutzer durch das Verschieben eines Reglers auf der Zeitachse Messwerte an verschiedenen Zeitpunkten auf der Karte aufrufen.
 
 \begin{tikzpicture}[%
@@ -152,14 +152,24 @@ Der \enquote{Dark Mode} und der \enquote{Farbenblind Modus} unterscheiden sich d
 \end{center}
 
 \subsection{Screenshots Mobile Version}
+\begin{figure}[H]
+	\begin{minipage}[b]{.5\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=0.9\textwidth]{media/Startseite-Mobile-Version}\captionof{figure}{Startseite} 
+	\end{minipage}
+	\hspace{.05\linewidth}% Abstand zwischen Bilder
+	\begin{minipage}[b]{.5\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=0.9\textwidth]{media/Menue-Mobile-Version}\captionof{figure}{Menue} 
+	\end{minipage}
 
-\begin{center}
-	\includegraphics[width=0.9\textwidth]{media/Startseite-Mobile-Version}\captionof{figure}{Startseite} 
+	\begin{minipage}[b]{.5\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=0.9\textwidth]{media/AktuelleDaten-Mobile-Version}\captionof{figure}{Aktuelle Daten} 
+	\end{minipage}
+\end{figure}
 
-	\includegraphics[width=0.9\textwidth]{media/Menue-Mobile-Version}\captionof{figure}{Menue} 
+
 	
-	\includegraphics[width=0.9\textwidth]{media/AktuelleDaten-Mobile-Version}\captionof{figure}{Aktuelle Daten} 
-\end{center}
+	
+
 
 \textbf{Anmerkung:}
 Es gilt zu beachten, dass die beschriebene Benutzeroberfläche in \autoref{Struktur Frontend} und \autoref{Screenshots} nur eine erste Annäherung an das Endprodukt ist. In der endgültige Version sind eventuell Abweichungen in der Darstellung der Daten möglich, jedoch ist die hier gegebene Struktur maßgeblich.
