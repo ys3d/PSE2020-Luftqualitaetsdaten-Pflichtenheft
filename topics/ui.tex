@@ -9,8 +9,8 @@
 \subsection{Struktur Frontend}
 \label{Struktur Frontend}
 
-Als erste Ansicht der Webapplikation soll eine Deutschlandkarte mit farbigen \glspl{Kartenoverlay}s geladen werden. Die farbigen \glspl{Kartenoverlay}s geben hierbei Feinstaubdaten wieder.
-Die Webapplikation kann von einer ausklappbaren \glspl{Toolbar} aus bedient werden. Von dort aus sind die verschiedenen Seiten der Webapplikation erreichbar und deren Funktionen abrufbar. 
+Als erste Ansicht der Webapplikation soll eine Deutschlandkarte mit farbigen Kartenoverlays geladen werden. Die farbigen Kartenoverlays geben hierbei Feinstaubdaten wieder.
+Die Webapplikation kann von einer ausklappbaren Toolbar aus bedient werden. Von dort aus sind die verschiedenen Seiten der Webapplikation erreichbar und deren Funktionen abrufbar. 
 Dabei bieten sich dem Nutzer die hier dargestellten Optionen. Erweiterte Funktionen sind in den folgenden Diagrammen grau hinterlegt.
 
 \begin{tikzpicture}[%
@@ -19,8 +19,8 @@ grow via three points={one child at (0.5,-0.7) and
 edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}]
 \node {Toolbar}
 child{ node {Aktuelle Daten (Startseite)}
-	child { node {glspl{Luftqualitaetsdaten}}
-		child { node {glspl{Feinstaub} (Startseite)}}
+	child { node {\gls{Luftqualitaetsdaten}}
+		child { node {\gls{Feinstaub} (Startseite)}}
 		child { node {Luftdruck}}
 		child { node {Lufttemperatur}}
 		child { node {Luftfeuchtigkeit}}
@@ -41,11 +41,11 @@ child [missing] {}
 child [missing] {}	
 child [missing] {}											
 child { node {Zeitliche Entwicklung}}
-child { node {Definition von glspl{Feinstaub}}}
-child { node [optional]{Hauptgründe für glspl{Feinstaub} in Deutschland}}
-child { node [optional]{Gesundheitsrisiken von glspl{Feinstaub}}}
-child { node {\glspl{SmartAQnet}}}
-child { node [optional]{Verlinkung zu einer Bauanleitung für einen \glspl{DIY-Sensor}}}
+child { node {Definition von \gls{Feinstaub}}}
+child { node [optional]{Hauptgründe für \gls{Feinstaub} in Deutschland}}
+child { node [optional]{Gesundheitsrisiken von \gls{Feinstaub}}}
+child { node {SmartAQnet}}
+child { node [optional]{Verlinkung zu einer Bauanleitung für einen \gls{DIY} \gls{Sensor}}}
 child { node [optional]{Hilfefunktion}}
 child { node [optional] {Spracheinstellung}
 	child { node {Deutsch}}
@@ -64,16 +64,16 @@ child { node [optional] {Modus}
 \subsubsection{Aktuelle Daten (Startseite)}
 
 \enquote{Aktuelle Daten} zeigt eine Karte von Deutschland mit der der Nutzer interagieren kann. 
-Er kann in der \glspl{Toolbar} auswählen welche \glspl{Luftqualitaetsdaten} er mit farbigen \glspl{Kartenoverlay}s auf der Landkarte angezeigt haben möchte. 
-Dabei hat er die Auswahl zwischen Daten zu \glspl{Feinstaub}, Lufttemperatur, Luftdruck und Luftfeuchtigkeit.
-Der Nutzer kann Städte durch den Stadtnamen oder die Postleitzahl auf der Landkarte suchen. Er kann Sensoren oder Punkte auf der Landkarte auswählen und \glspl{Sensoroverview}s zu ihnen erhalten. Dies soll durch die \glspl{Sidebar} ermöglicht werden.
-Die \glspl{Sidebar} ist ein funktionaler Teil der Seite \enquote{Aktuelle Daten}. Klickt der Nutzer auf einen \enquote{Sensor} oder einen Punkt auf der Karte öffnet sie sich automatisch.
+Er kann in der Toolbar auswählen welche \gls{Luftqualitaetsdaten} er mit farbigen Kartenoverlay auf der Landkarte angezeigt haben möchte. 
+Dabei hat er die Auswahl zwischen Daten zu \gls{Feinstaub}, Lufttemperatur, Luftdruck und Luftfeuchtigkeit.
+Der Nutzer kann Städte durch den Stadtnamen oder die Postleitzahl auf der Landkarte suchen. Er kann Sensoren oder Punkte auf der Landkarte auswählen und Sensoroverviews zu ihnen erhalten. Dies soll durch die \gls{Sidebar} ermöglicht werden.
+Die \gls{Sidebar} ist ein funktionaler Teil der Seite \enquote{Aktuelle Daten}. Klickt der Nutzer auf einen \enquote{Sensor} oder einen Punkt auf der Karte öffnet sie sich automatisch.
 
 \begin{tikzpicture}[%
 grow via three points={one child at (0.5,-0.7) and
 	two children at (0.5,-0.7) and (0.5,-1.4)},
 edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}]
-\node {\glspl{Sidebar}}
+\node {\gls{Sidebar}}
 child { node {Sensortyp}}
 child { node {Messwerte}}
 child { node {Diagramm}}
@@ -88,7 +88,7 @@ child { node [optional] {Gesundheitsrisiken zu den Messwerten}};
 \subsubsection{Zeitliche Entwicklung}
 
 In \enquote{Zeitliche Entwicklung} soll es dem Nutzer ermöglicht werden sich mit der zeitlichen Entwicklung der Luftqualität auseinanderzusetzen. 
-Zu diesem Zweck sollen Feinstaubdaten als farbige \glspl{Kartenoverlay}s auf einer Deutschlandkarte mit Zeitachse angezeigt werden. 
+Zu diesem Zweck sollen Feinstaubdaten als farbige Kartenoverlay auf einer Deutschlandkarte mit Zeitachse angezeigt werden. 
 Der Nutzer durch das Verschieben eines Reglers auf der Zeitachse Messwerte an verschiedenen Zeitpunkten auf der Karte aufrufen.
 
 \begin{tikzpicture}[%
@@ -99,24 +99,24 @@ edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}]
 child { node {Reglerfunktion des Zeitpunkts}};
 \end{tikzpicture}
 
-\subsubsection{Definition von glspl{Feinstaub}}
-Auf dieser Seite soll eine verständliche Definition von glspl{Feinstaub} wiedergegeben werden.
+\subsubsection{Definition von \gls{Feinstaub}}
+Auf dieser Seite soll eine verständliche Definition von \gls{Feinstaub} wiedergegeben werden.
 
 
-\subsubsection{Hauptgründe für glspl{Feinstaub} in Deutschland}
-Diese Seite soll die Gründe für glspl{Feinstaub} in Deutschland graphisch darstellen.
+\subsubsection{Hauptgründe für \gls{Feinstaub} in Deutschland}
+Diese Seite soll die Gründe für \gls{Feinstaub} in Deutschland graphisch darstellen.
 
 
-\subsubsection{Gesundheitsrisiken von glspl{Feinstaub}}
-Die Seite \enquote{Gesundheitsrisiken von glspl{Feinstaub}} soll dem Nutzer sachlich aufzeigen welche Gesundheitsrisiken durch glspl{Feinstaub} kurzfristig und langfristig auftreten. 
+\subsubsection{Gesundheitsrisiken von \gls{Feinstaub}}
+Die Seite \enquote{Gesundheitsrisiken von \gls{Feinstaub}} soll dem Nutzer sachlich aufzeigen welche Gesundheitsrisiken durch \gls{Feinstaub} kurzfristig und langfristig auftreten. 
 Dabei sollen ebenfalls graphische Hilfsmittel eingesetzt werden.
 
 \subsubsection{SmartAQnet}
-An dieser Stelle soll eine kurze Beschreibung über das Projekt \glspl{SmartAQnet} informieren. 
-Ebenso gibt es eine Verlinkung zum Projekt \glspl{SmartAQnet}.
+An dieser Stelle soll eine kurze Beschreibung über das Projekt SmartAQnet informieren. 
+Ebenso gibt es eine Verlinkung zum Projekt SmartAQnet.
 
-\subsubsection{Verlinkung zu einer Bauanleitung für einen \glspl{DIY-Sensor}}
-Verlinkung zu einer Bauanleitung für einen \glspl{DIY}-\glspl{Sensor}.
+\subsubsection{Verlinkung zu einer Bauanleitung für einen \gls{DIY} \gls{Sensor}}
+Verlinkung zu einer Bauanleitung für einen \gls{DIY} \gls{Sensor}.
 
 \subsubsection{Hilfefunktion}
 Die Hilfefunktion soll den Nutzer bei der Interaktion mit der Webapplikation unterstützen. Sie soll die Funktionsweise der verschiedenen Seiten kurz und verständlich erklären.
@@ -146,20 +146,28 @@ Der \enquote{Dark Mode} und der \enquote{Farbenblind Modus} unterscheiden sich d
 	
 	\includegraphics[width=0.9\textwidth]{media/Gesundheitsrisiken}\captionof{figure}{Gesundheitsrisiken von Feinstaub} 
 	
-	\includegraphics[width=0.9\textwidth]{media/SmartAQnet}\captionof{figure}{\glspl{SmartAQnet}} 
+	\includegraphics[width=0.9\textwidth]{media/SmartAQnet}\captionof{figure}{SmartAQnet} 
 	
-	\includegraphics[width=0.9\textwidth]{media/DIY}\captionof{figure}{Verlinkung zu einer Bauanleitung für einen \glspl{DIY}-\glspl{Sensor}} 
+	\includegraphics[width=0.9\textwidth]{media/DIY}\captionof{figure}{Verlinkung zu einer Bauanleitung für einen \gls{DIY} gls{Sensor}} 
 \end{center}
 
 \subsection{Screenshots Mobile Version}
 
-\begin{center}
-	\includegraphics[width=0.9\textwidth]{media/Startseite-Mobile-Version}\captionof{figure}{Startseite} 
+	\begin{minipage}[b]{.5\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=0.7\textwidth]{media/Startseite-Mobile-Version}\captionof{figure}{Startseite} 
+	\end{minipage}
+	\hspace{.05\linewidth}% Abstand zwischen Bilder
+	\begin{minipage}[b]{.5\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=0.7\textwidth]{media/Menue-Mobile-Version}\captionof{figure}{Menue} 
+	\end{minipage}
+	\begin{minipage}[b]{.5\linewidth} % [b] => Ausrichtung an \caption
+		\includegraphics[width=0.7\textwidth]{media/AktuelleDaten-Mobile-Version}\captionof{figure}{Aktuelle Daten} 
+	\end{minipage}
 
-	\includegraphics[width=0.9\textwidth]{media/Menue-Mobile-Version}\captionof{figure}{Menue} 
+
 	
-	\includegraphics[width=0.9\textwidth]{media/AktuelleDaten-Mobile-Version}\captionof{figure}{Aktuelle Daten} 
-\end{center}
+	
+
 
 \textbf{Anmerkung:}
 Es gilt zu beachten, dass die beschriebene Benutzeroberfläche in \autoref{Struktur Frontend} und \autoref{Screenshots} nur eine erste Annäherung an das Endprodukt ist. In der endgültige Version sind eventuell Abweichungen in der Darstellung der Daten möglich, jedoch ist die hier gegebene Struktur maßgeblich.
