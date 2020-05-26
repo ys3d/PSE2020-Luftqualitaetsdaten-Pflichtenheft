@@ -3,77 +3,48 @@
  \begin{itemize}
 	\item Der Nutzer kann auf die Webapplikation über einen Webbrowser zugreifen. 
 	Der Zugriff soll sowohl über den Computer als auch über Handys möglich sein.
-
 	\item Als erste Seite soll eine Landkarte von Deutschland geladen werden.
 	Diese Karte soll Aufschluss über die Feinstaubmesswerte zu einem in der näheren Vergangenheit gemessenen Zeitpunkt geben.
-
 	\item Der Nutzer soll auf einer \gls{Toolbar} auswählen können welche \gls{Luftqualitaetsdaten} auf der Landkarte angezeigt werden. 
 	Der Nutzer hierbei die Auswahl zwischen den \gls{Luftqualitaetsdaten} Luftfeuchtigkeit, Luftdruck, Temperatur und \gls{Feinstaub}.
-
 	\item Die unterschiedlichen \gls{Luftqualitaetsdaten} sollen mit farbigen \glspl{Kartenoverlay} auf der Karte dargestellt werden. 
 	Es gibt eine Legende für die verwendeten Farben. Feinstaubmesswerte sollen dabei hervorgehoben werden falls sie die gesetzlich vorgeschriebenen Grenzwerte überschreiten.
-	
 	\item Die Messwerte sollen durch interpolierte Daten kontinuierlich dargestellt werden.
-	
 	\item Der Nutzer kann auf einen \gls{Sensor} markieren und bekommt dessen Messwerte in einem Diagramm und den Sensortyp angezeigt.
-	
 	\item Der Nutzer kann auf einen Punkt auf der Landkarte markieren und bekommt dessen interpolierte Messwerte als Diagramm angezeigt.
-
 	\item Der Nutzer kann eine Stadt durch den Stadtnamen oder die Postleitzahl suchen. 
 	Die Webapplikation ändert daraufhin den Landkartenausschnitt und markiert die gesuchte Stadt auf der Karte.
-
 	\item  Zu einem \gls{Sensor} oder einem Punkt auf der Landkarte kann der Nutzer ein Zeitintervall angeben. Die Webapplikation zeigt daraufhin für das gegebenen Intervall 
 	die zeitliche Entwicklung der Luftqualität als Menge-Zeit Diagramm an.
-
 	\item Zu einem \gls{Sensor} oder einem Punkt auf der Landkarte kann der Nutzer ein Datum filtern. 
 	Die Webapplikation zeigt daraufhin die entsprechenden Messwerte zur Luftqualität an.
-
 	\item Auf der Webapplikation soll ebenfalls eine Zeitachse dargestellt werden. 
 	Der Nutzer kann hier durch das Verschieben eines Reglers frühere Messwerte zu Luftqualität abrufen. 
-
 	\item Die Webapplikation enthält eine Definition für \gls{Feinstaub}.
-
 	\item Die Webapplikation enthält eine Verlinkung zum Projekt SmartAQnet. 
 \end{itemize}
-
 \subsection{Wunschkriterien}
    \begin{itemize}
    	\item Die Webapplikation soll die Hauptgründe für \gls{Feinstaub} in Deutschland in einer Graphik darstellen.
-   	
    	\item Die Webapplikation soll die Gesundheitsrisiken, die durch \gls{Feinstaub} auftreten, in einer Graphik darstellen. 
-
 	\item Der Nutzer kann den Feinstaubmesswert eines Sensors oder eines Punkts auf der Karte auswählen. 
 	Die Webapplikation zeigt daraufhin an welche Gesundheitsrisiken bei diesem spezifischen Messwert kurzfristig und langfristig auftreten.
-	
 	\item Der Nutzer kann den Feinstaubmesswert eines Sensors oder eines Punkts auf der Karte auswählen. 
 	Die Webapplikation zeigt ihm daraufhin ein alltägliches Szenario an, das eine äquivalente Feinstaubbelastung verursacht.
-	
 	\item Auf Wunsch des Nutzers soll die Webapplikation dessen Standort feststellen und die Karte entsprechend zentrieren.
-	
 	\item Durch eine Teilen-Funktion soll der Nutzer Messwerte in den sozialen Netzwerken verbreiten können.
-	
 	\item Beim Verlassen der Webapplikation soll der zuletzt betrachtete Kartenausschnitt gespeichert werden. Beim erneuten Betreten der Seite soll dieser Kartenausschnitt wiederhergestellt werden.
-	
 	\item Die Webapplikation soll eine Hilfefunktion haben, die die verschiedenen Interaktionsmöglichkeiten erklärt.
-	
 	\item Die Webapplikation enthält einen Link zu einer Bauanleitung für einen \gls{DIY} \gls{Sensor}.
-	
 	\item Der Nutzer kann auswählen, ob ihm die Webapplikation in deutscher oder englischer Sprache angezeigt wird.
-	
 	\item Der Nutzer soll, als zusätzliche Anzeige, die Webapplikation in einem Dark Mode oder in einem Farbenblind-Modus benutzen können.
-	
 	\item Die Webapplikation verfügt über einen Expertenmodus. In diesem werden, wenn der Nutzer auf einen Sensor klickt, typspezifische Informationen über den \gls{Sensor} angezeigt.
 	Im Expertenmodus existiert ein Filter über die Sensoren. Der Nutzer kann einstellen welche \gls{Sensor}-Typen auf der Landkarte angezeigt werden.        
 \end{itemize}
-
 \subsection{Abgrenzungskriterien}
-	\begin{itemize}
-		
+	\begin{itemize}	
 	\item Bei \softwarename handelt es sich um eine reine Webapplikation.
-	
 	\item Die Webapplikation wird kein User Management betreiben.
-	
-	\item Es werden ausschließlich Daten integriert, die dem SensorThings Standard entsprechen.
-	
+	\item Es werden ausschließlich Daten integriert, die dem SensorThings Standard entsprechen.	
 	\item Es wird immer nur einer der vier möglichen \gls{Luftqualitaetsdaten} auf der Karte angezeigt.
 \end{itemize}
