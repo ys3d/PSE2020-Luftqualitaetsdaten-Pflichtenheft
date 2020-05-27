@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="VisAQLogo.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 92.339582 55.5625"
+   height="5.5562501cm"
+   width="9.2339582cm">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       background_color="#ffffffff"
+       background="true"
+       hide_mask="false"
+       invert="false"
+       uri="#mask-powermask-path-effect440"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect440"
+       effect="powermask" />
+    <inkscape:path-effect
+       effect="powermask"
+       id="path-effect323"
+       is_visible="true"
+       lpeversion="1"
+       uri="#mask-powermask-path-effect323"
+       invert="false"
+       hide_mask="false"
+       background="false"
+       background_color="#ffffffff" />
+    <inkscape:path-effect
+       background_color="#ffffffff"
+       background="true"
+       hide_mask="false"
+       invert="false"
+       uri="#mask-powermask-path-effect201"
+       lpeversion="1"
+       is_visible="true"
+       id="path-effect201"
+       effect="powermask" />
+    <mask
+       id="mask-powermask-path-effect440"
+       maskUnits="userSpaceOnUse">
+      <path
+         d="m 140.27539,654.36522 h 351 v 212.00001 h -351 z"
+         style="fill:#ffffff;fill-opacity:1"
+         id="mask-powermask-path-effect440_box" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:105.42px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.02681"
+         x="171.2471"
+         y="777.49646"
+         id="text438"
+         transform="scale(0.97388281,1.0268176)"><tspan
+           sodipodi:role="line"
+           id="tspan436"
+           x="171.2471"
+           y="777.49646"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:105.42px;font-family:'Calisto MT';-inkscape-font-specification:'Calisto MT';stroke-width:1.02681">VisAQ</tspan></text>
+    </mask>
+  </defs>
+  <sodipodi:namedview
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     inkscape:window-maximized="0"
+     inkscape:window-y="7"
+     inkscape:window-x="2197"
+     inkscape:window-height="1040"
+     inkscape:window-width="1256"
+     units="cm"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="19.031729"
+     inkscape:cx="255.57501"
+     inkscape:zoom="1.4142136"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-37.379113,-173.39871)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Ebene 1">
+    <rect
+       rx="37"
+       y="41.804165"
+       x="51.858334"
+       height="38.629166"
+       width="82.285416"
+       id="rect18"
+       style="fill:#5fd3bc;fill-rule:evenodd;stroke-width:0.264583" />
+    <ellipse
+       ry="9.5249987"
+       rx="13.493749"
+       cy="50.006248"
+       cx="66.939583"
+       id="path20"
+       style="fill:#5fd3bc;stroke-width:0.243807" />
+    <ellipse
+       ry="11.1125"
+       rx="13.096875"
+       style="fill:#5fd3bc;stroke-width:0.25944"
+       id="path20-2"
+       cx="83.87291"
+       cy="46.434376" />
+    <ellipse
+       ry="12.832293"
+       rx="13.229168"
+       cy="45.508331"
+       cx="99.880211"
+       id="path20-2-9"
+       style="fill:#5fd3bc;stroke-width:0.280198" />
+    <ellipse
+       ry="12.700002"
+       rx="13.890626"
+       cy="46.698963"
+       cx="115.62292"
+       id="path20-2-6"
+       style="fill:#5fd3bc;stroke-width:0.285633" />
+    <ellipse
+       ry="9.3927097"
+       rx="10.847918"
+       cy="52.387505"
+       cx="124.75105"
+       id="path20-2-2"
+       style="fill:#5fd3bc;stroke-width:0.217077" />
+    <ellipse
+       ry="9.921876"
+       rx="12.303126"
+       cy="64.029175"
+       cx="125.14792"
+       id="path20-2-3"
+       style="fill:#5fd3bc;stroke-width:0.237602" />
+    <ellipse
+       ry="12.303126"
+       rx="14.022918"
+       cy="70.379166"
+       cx="115.22604"
+       id="path20-2-26"
+       style="fill:#5fd3bc;stroke-width:0.282471" />
+    <ellipse
+       ry="12.700002"
+       rx="14.684377"
+       cy="75.538544"
+       cx="97.631248"
+       id="path20-2-7"
+       style="fill:#5fd3bc;stroke-width:0.293681" />
+    <ellipse
+       ry="11.77396"
+       rx="14.684377"
+       cy="71.966667"
+       cx="75.14167"
+       id="path20-2-1"
+       style="fill:#5fd3bc;stroke-width:0.282771" />
+    <ellipse
+       ry="8.8635435"
+       rx="13.229168"
+       cy="67.73333"
+       cx="64.690628"
+       id="path20-2-0"
+       style="fill:#5fd3bc;stroke-width:0.232871" />
+    <ellipse
+       ry="7.6729178"
+       rx="11.509377"
+       cy="58.605206"
+       cx="56.620838"
+       id="path20-2-11"
+       style="fill:#5fd3bc;stroke-width:0.202093" />
+    <path
+       inkscape:original-d="m 348.21484,655.36523 a 50.000005,48.500005 0 0 0 -36.38281,15.29493 49.5,42 0 0 0 -24.05664,-5.29493 49.5,42 0 0 0 -43.80664,22.44141 50.999996,35.999995 0 0 0 -20.19336,-2.94141 50.999996,35.999995 0 0 0 -51,36 50.999996,35.999995 0 0 0 0.4082,4.54883 43.500008,29.000004 0 0 0 -31.9082,27.95117 43.500008,29.000004 0 0 0 25.48633,26.39649 50.000005,33.500007 0 0 0 -1.48633,8.10351 50.000005,33.500007 0 0 0 37.96484,32.51368 55.500008,44.500006 0 0 0 32.49219,25.28515 l 180.91992,-87.38281 -2.03711,-3.46484 -2.04296,-1.78907 21.92382,-0.59375 -14.0957,16.80274 -0.13086,-2.71485 -1.44922,-3.75195 -175.30469,84.66992 a 55.500008,44.500006 0 0 0 11.25977,0.92578 55.500008,44.500006 0 0 0 35.08203,-10.01953 55.500008,48.000008 0 0 0 49.91797,27.01953 55.500008,48.000008 0 0 0 48.01172,-23.91992 53.000005,46.500004 0 0 0 18.48828,2.91992 53.000005,46.500004 0 0 0 51.25781,-34.67968 46.500004,37.500003 0 0 0 32.74219,-35.82032 46.500004,37.500003 0 0 0 -12.7832,-25.82421 41.000005,35.500004 0 0 0 5.7832,-18.17579 41.000005,35.500004 0 0 0 -24.38477,-32.45312 52.500004,48.000008 0 0 0 -51.11523,-37.04688 52.500004,48.000008 0 0 0 -26.86133,6.75977 50.000005,48.500005 0 0 0 -32.63867,-11.75977 50.000005,48.500005 0 0 0 -0.0606,0 z"
+       inkscape:path-effect="#path-effect440"
+       transform="scale(0.26458333)"
+       d="m 348.21484,655.36523 a 50.000005,48.500005 0 0 0 -36.38281,15.29493 49.5,42 0 0 0 -24.05664,-5.29493 49.5,42 0 0 0 -43.80664,22.44141 50.999996,35.999995 0 0 0 -20.19336,-2.94141 50.999996,35.999995 0 0 0 -51,36 50.999996,35.999995 0 0 0 0.4082,4.54883 43.500008,29.000004 0 0 0 -31.9082,27.95117 43.500008,29.000004 0 0 0 25.48633,26.39649 50.000005,33.500007 0 0 0 -1.48633,8.10351 50.000005,33.500007 0 0 0 37.96484,32.51368 55.500008,44.500006 0 0 0 32.49219,25.28515 l 180.91992,-87.38281 -2.03711,-3.46484 -2.04296,-1.78907 21.92382,-0.59375 -14.0957,16.80274 -0.13086,-2.71485 -1.44922,-3.75195 -175.30469,84.66992 a 55.500008,44.500006 0 0 0 11.25977,0.92578 55.500008,44.500006 0 0 0 35.08203,-10.01953 55.500008,48.000008 0 0 0 49.91797,27.01953 55.500008,48.000008 0 0 0 48.01172,-23.91992 53.000005,46.500004 0 0 0 18.48828,2.91992 53.000005,46.500004 0 0 0 51.25781,-34.67968 46.500004,37.500003 0 0 0 32.74219,-35.82032 46.500004,37.500003 0 0 0 -12.7832,-25.82421 41.000005,35.500004 0 0 0 5.7832,-18.17579 41.000005,35.500004 0 0 0 -24.38477,-32.45312 52.500004,48.000008 0 0 0 -51.11523,-37.04688 52.500004,48.000008 0 0 0 -26.86133,6.75977 50.000005,48.500005 0 0 0 -32.63867,-11.75977 50.000005,48.500005 0 0 0 -0.0606,0 z"
+       style="fill:#37c8ab;fill-rule:evenodd;stroke-width:0.999999"
+       mask="url(#mask-powermask-path-effect440)"
+       id="rect18-0" />
+    <text
+       transform="scale(0.9738828,1.0268176)"
+       id="text199-5"
+       y="51.144817"
+       x="28.419298"
+       style="font-style:normal;font-weight:normal;font-size:27.8924px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.271677"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.8924px;font-family:'Calisto MT';-inkscape-font-specification:'Calisto MT';stroke-width:0.271677"
+         y="51.144817"
+         x="28.419298"
+         id="tspan197-1"
+         sodipodi:role="line">VisAQ</tspan></text>
+    <path
+       id="path207-9"
+       style="fill:#000000;stroke:none;stroke-width:0.0393544px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 168.48265,68.057377 -5.80064,0.15722 0.54082,0.47335 0.53913,0.91667 -60.47258,29.207524 0.28678,0.59377 0.28678,0.59375 60.47257,-29.207534 0.38326,0.99307 0.0345,0.71789 z" />
+  </g>
+</svg>
