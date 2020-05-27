@@ -62,7 +62,7 @@ Durch die Verwendung von MVC wird die Architektur strukturierter und Modifikatio
     \item \textbf{Model:} Im Model findet die Datenhaltung statt. Alle durch die Sensoren gesammelten Daten werden in der Datenbank nach dem Standard der \gls{SensorThings API} gespeichert. Die Datenhaltung wird in \softwarename nicht implementiert.
         Zum Controller hin ist das Modell über die \gls{RESTAPI} angebunden.
     \item \textbf{Controller:} Der Controller bereitet die Daten für die Darstellung auf und führt Operationen aus.
-        Das \softwarename Backend läd und zwischenspeichert die die Daten der \glspl{Sensor} aus der Datenbank. Das Backend sorgt somit auch dafür, dass die Nutzer bei der Anzeige der Daten nicht lange auf die Datenbank warten müssen, sondern die daten schnellstmöglich gezeigt bekommen.
+        Das \softwarename Backend lädt und speichert die Daten der \glspl{Sensor} aus der Datenbank zwischen. Das Backend sorgt somit auch dafür, dass die Nutzer bei der Anzeige der Daten nicht lange auf die Datenbank warten müssen, sondern die daten schnellstmöglich gezeigt bekommen.
         Das \softwarename Backend läuft auf dem Webserver. Auf der Seite des Nutzers kommunizieren einige clientseitige \gls{JavaScript} Controller mit dem Backend.
     \item \textbf{View:} View organisiert die Anzeige der Daten für den Nutzer.
         Das \softwarename Frontend läuft auf dem Webserver und berechnet in Abstimmung mit dem Controller die angezeigten Daten.
