@@ -2,6 +2,7 @@
 \section{Systemmodell}
 Die Anwendung st nach dem prinzip des \gls{MVC}-Entwurfmusters aufgebaut. Das folgende Diagramm zeigt, wie die Software gegliedert ist.
 Durch die Verwendung von MVC wird die Architektur strukturierter und Modifikationen am Programm werden vereinfacht. 
+\\
 \begin{figure}
     \begin{tikzpicture}[node distance=2cm]
 
@@ -58,6 +59,7 @@ Durch die Verwendung von MVC wird die Architektur strukturierter und Modifikatio
     \end{tikzpicture}
     \caption{Diagram des System-Aufbaus}
 \end{figure}
+\\
 \begin{itemize}
     \item \textbf{Model:} Im Model findet die Datenhaltung statt. Alle durch die Sensoren gesammelten Daten werden in der Datenbank nach dem Standard der \gls{SensorThings API} gespeichert. Die Datenhaltung wird in \softwarename nicht implementiert.
         Zum Controller hin ist das Modell über die \gls{RESTAPI} angebunden.
