@@ -24,25 +24,29 @@ Für jede Funktion existiert mindestens ein Testfall.
     \hline
     /T060/ & Anzeigen der \gls{Toolbar} & Zeigt dem Benutzer, dass es mehr Funktionen zum benutzen gibt & /F020/ \\
     \hline
-    /T070/ & Aufklappen der \gls{Toolbar} für Erweiterte Funktionen & Ermöglicht die Wahl zwischen mehr Funktionen & /F020/ \\
+    /T070/ & Aufklappen der \gls{Toolbar} für weiterte Funktionen & Ermöglicht die Wahl zwischen mehr Funktionen & /F020/ \\
+    \hline
+    /T071/ & Seite mit Deutschlandkarte und Schiebebalken für das Anzeigen zeitlicher Entwicklung & Anschauliche Methode um die Entwicklung in ganz Deutschland zu zeigen & /F200/ \\
+    \hline
+    /T075/ & Benutzbarkeit des Schiebebalken & Ermöglicht es die Karte zu dem gewünschten Zeitpunkt darzustellen & /F200/ \\
     \hline
     /T080/ & Anzeigen der Suchleiste & Ermöglicht es einen bestimmten Standort zu suchen & /F020/ \\
     \hline
     /T090/ & Anzeigen einer Kartenlegende & Ermöglicht es einzuschätzen was die Werte bedeuten & /F100/ \\
     \hline
-    /T100/ & In der Suchleiste wird eine Stadt eingegeben. & Zoomt die Karte an den gesuchten Standort ran & /F030/ \\
+    /T100/ & In der Suchleiste wird eine Stadt eingegeben. & Zoomt die Karte an den gesuchten Standort & /F030/ \\
     \hline
-    /T0110/ & In der Suchleiste wird eine Postleitzahl eingegeben & Zoomt die Karte an den gesuchten Standort ran &  /F030/ \\
+    /T0110/ & In der Suchleiste wird eine Postleitzahl eingegeben & Zoomt die Karte an den gesuchten Standort &  /F030/ \\
     \hline
     /T120/ & Auswahl eines der vier \glspl{Kartenoverlay} & Ermöglicht es zwischen weiteren Overlays zu wählen & /F050/ \\
     \hline
-    /T130/ & Anzeigen der \glspl{Kartenoverlay} & Erleichtert das erkennen der spezifischen Daten & /F060/, /F070/ ,/F080/, /F090/ \\
+    /T130/ & Anzeigen der \glspl{Kartenoverlay} & Erleichtert das Erkennen der spezifischen Daten & /F060/, /F070/ ,/F080/, /F090/ \\
     \hline
     /T140/ & Anzeigen der Daten von mehreren \glspl{Sensor} über die Karte & Zeigt die Daten in der Sidebar an & /F040/ \\
     \hline
-    /T150/ & Markieren der \glspl{Sensor} im aktuellen Kartenausschnitt & Ermöglicht es nur die Daten anzuzeigen die den Benutzer interessieren & /F040/ \\
+    /T150/ & Markieren der \glspl{Sensor} im aktuellen Kartenausschnitt & Ermöglicht es nur die Daten anzuzeigen, die den Benutzer interessieren & /F040/ \\
     \hline 
-    /T155/ & Selbstständiges markieren der \glspl{Sensor} & Ermöglicht es nur die Daten anzuzeigen die den Benutzer interessieren & \\
+    /T155/ & Selbstständiges markieren der \glspl{Sensor} & Ermöglicht es nur die Daten anzuzeigen, die den Benutzer interessieren & \\
     \hline
     /T160/ & Anzeigen der Daten eines Sensors über eine \gls{Sidebar} & Ermöglicht es den Benutzer zu informieren. Zeigt die vier Datensätze an &  /F130/, /F110/ \\
     \hline
@@ -72,7 +76,7 @@ Für jede Funktion existiert mindestens ein Testfall.
     \hline 
     /T240/ & Stresstest durch wildes drücken der Tasten & Ermöglicht es uns mögliche Fehler in der Kodierung zu finden & \\
     \hline      
-    /T250/ & Speichern der Nutzerdaten für erneutes Laden der Schnittstelle zu einem anderen Zeitpunkt & Ermöglicht es schneller auf den präferierten Standort zuzugleichen & /F160/, /F180/, /F240/ \\
+    /T250/ & Speichern der Nutzerdaten für erneutes Laden der Schnittstelle zu einem anderen Zeitpunkt & Ermöglicht es schneller auf den präferierten Standort zuzugreifen & /F160/, /F180/, /F240/ \\
     \hline  
     /T260/ & Aufrufen der \GLS{DIY} Anleitungen für \glspl{Sensor} über die \gls{Toolbar} & Ermöglicht es dem Benutzer sich einen eigenen DIY Sensor zu bauen & /F020/ \\
     \hline
@@ -82,14 +86,14 @@ Für jede Funktion existiert mindestens ein Testfall.
     \hline
     /T290/ & (De-)aktivieren des Expertenmoduses & Ermöglicht es dem Benutzer sich spezifischer zu informieren & /F120/, /F220/ \\
     \hline
-    /T300/ & Anzeigen interpolierter Daten & Ermöglicht es auch Daten zu bekommen, die zwischen mehreren Sensoren liegen & /F060/, /F070/, /F080/, /F090/ \\
+    /T300/ & Anzeigen \glslink{interpolation}{interpolierter} Daten & Ermöglicht es auch Daten zu bekommen, die zwischen mehreren Sensoren liegen & /F060/, /F070/, /F080/, /F090/ \\
     \hline
     /T310/ & Anzeigen von allgemeinen Informationen zu \glspl{Schadstoffwert}n und Gesundheitsrisiken & Ermöglicht es die Benutzer über die Werte zu informieren & /F210/, /F230/ \\
     \hline
-    /T320/ & Seite mit Deutschlandkarte und Schiebebalken für das Anzeigen zeitlicher Entwicklung & Anschauliche Methode um die Entwicklung in ganz Deutschland zu zeigen & \\
+    /T320/ & Hilfefunktion in der \gls{Toolbar}, die die unterschiedlichen Funktionen erklärt & Ermöglicht es Benutzern, die Probleme mit der Schnittstelle haben, leichter mit dieser umzugehen & \\
     \hline
-    /T330/ & Benutzbarkeit des Schiebebalken & Ermöglicht es die Karte zu dem gewünschten Zeitpunkt darzustellen & \\
-    \hline
+    /T330/ & Zugriff der Schnittstelle über \gls{Standart-PC} als auch über Handys & Ermöglicht es dem Benutzer auf die Schnittstelle über unterschiedliche Endgeräte zuzugreifen & \\
+    \hline 
 \end{tabularx}
 
 \subsection{Testszenarien}
@@ -232,7 +236,17 @@ Ein Benutzer, der die Seite bereits besucht hat, möchte sich über die zeitlich
     \item /T050/ Laden der Karte mit dem zuletzt genutzten Standort des Nutzers.
     \item /T040/ Aktueller Standort wird in die Suchleiste eingegeben.
     \item /T070/ Aufklappen der \gls{Toolbar}.
-    \item /T320/ Laden einer Seite mit einer Deutschlandkarte und mit einem Schiebebalken. 
-    \item /T330/ Benutzen des Schiebebalken um unterschiedliche Werte in der Vergangenheit darzustellen.
+    \item /T071/ Laden einer Seite mit einer Karte und mit einem Schiebebalken. 
+    \item /T075/ Benutzen des Schiebebalken um unterschiedliche Werte in der Vergangenheit darzustellen.
     \item /T220/ Schließen der Schnittstelle.
+\end{enumerate}
+
+\textbf{Testszenario 12: Zugriff über Smartphone}
+\newline
+Ein Benutzer, der die Seite bereits besucht hat, möchte erneut über sein Smartphone zugreifen und sich über weitere Optionen mittles der Hilfefunktion erkundigen
+\begin{enumerate} [noitemsep]
+    \item /T330/ Starten der Schnittstelle mittels eines Smartphones.
+    \item /T050/ Laden der Karte mit dem zuletzt genutzten Standort des Nutzers.
+    \item /T320/ Öffnen der Hilfefunktion 
+    \item Weiter mit Testszenario 1 Schritt 6
 \end{enumerate}
