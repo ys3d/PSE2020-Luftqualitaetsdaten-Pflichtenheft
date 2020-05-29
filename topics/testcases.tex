@@ -5,7 +5,7 @@
 Für jede Funktion existiert mindestens ein Testfall.
 \newline
 \subsection{Basis-Testfälle}
-\begin{tabularx}{\textwidth}{| c | X | X | c |}
+\begin{tabularx}{\textwidth}{| c | X | X | X |}
     \hline
     \textbf{Nr.} & 
     \textbf{Beschreibung} &
@@ -67,7 +67,7 @@ Für jede Funktion existiert mindestens ein Testfall.
 \end{tabularx}
 
 \subsection{Erweiterte-Testfälle}
-\begin{tabularx}{\textwidth}{| c | X | X | c |}
+\begin{tabularx}{\textwidth}{| c | X | X | X |}
     \hline
     \textbf{Nr.} & 
     \textbf{Beschreibung} &
@@ -82,7 +82,7 @@ Für jede Funktion existiert mindestens ein Testfall.
     \hline
     /T270/ & (De-)aktivieren des Dark-Mode über die \gls{Toolbar} & Ermöglicht es dem Benutzer die Schnittstelle auch bei schlechten Lichtbedingungen zu benutzen & /F020/ \\
     \hline
-    /T280/ & Änderung der Sprach-Einstellung über die \gls{Toolbar} & Ermöglicht es dem Benutzer die Schnittstelle auch bei schlechten Deutschkenntinssen zu benutzen& /F020/ \\
+    /T280/ & Änderung der Sprach-Einstellung über die \gls{Toolbar} & Ermöglicht es dem Benutzer die Schnittstelle auch bei schlechten Deutschkenntinssen zu benutzen & /F020/ \\
     \hline
     /T290/ & (De-)aktivieren des Expertenmoduses & Ermöglicht es dem Benutzer sich spezifischer zu informieren & /F120/, /F220/ \\
     \hline
@@ -90,9 +90,9 @@ Für jede Funktion existiert mindestens ein Testfall.
     \hline
     /T310/ & Anzeigen von allgemeinen Informationen zu \glspl{Schadstoffwert}n und Gesundheitsrisiken & Ermöglicht es die Benutzer über die Werte zu informieren & /F210/, /F230/ \\
     \hline
-    /T320/ & Hilfefunktion in der \gls{Toolbar}, die die unterschiedlichen Funktionen erklärt & Ermöglicht es Benutzern, die Probleme mit der Schnittstelle haben, leichter mit dieser umzugehen & \\
+    /T320/ & Hilfefunktion in der \gls{Toolbar}, die die unterschiedlichen Funktionen erklärt & Ermöglicht es Benutzern, die Probleme mit der Schnittstelle haben, leichter mit dieser umzugehen & /F280/ \\
     \hline
-    /T330/ & Zugriff der Schnittstelle über \gls{Standart-PC} als auch über Handys & Ermöglicht es dem Benutzer auf die Schnittstelle über unterschiedliche Endgeräte zuzugreifen & \\
+    /T330/ & Zugriff der Schnittstelle über \gls{Standart-PC} als auch über Handys & Ermöglicht es dem Benutzer auf die Schnittstelle über unterschiedliche Endgeräte zuzugreifen & /F115/ \\
     \hline 
 \end{tabularx}
 
@@ -167,14 +167,14 @@ Ein erfahrener Benutzer möchte auf die historischen Daten ,in Form eines Zeitdi
     \item /T220/ Schnittstelle schließen.
 \end{enumerate}
 
-\textbf{Testszenario 6: Dark Mode}
+\textbf{Testszenario 6: Dark-Mode}
 \newline
-Ein Benutzer möchte den Dark Mode aktivieren. Nach erfolgreicher Änderung wird mit Testszenario 1 weitergemacht.
+Ein Benutzer möchte den Dark-Mode aktivieren. Nach erfolgreicher Änderung wird mit Testszenario 1 weitergemacht.
 \begin{enumerate} [noitemsep]
     \item /T230/ Erneutes starten der Schnittstelle
     \item /T200/ Laden des zuletzt genutzten Standortes.
     \item /T070/ Aufklappen der \gls{Toolbar}.
-    \item /T270/ Änderung zum Dark Mode.
+    \item /T270/ Änderung zum Dark-Mode.
     \item Weitermachen mit Testszenario 1 Schritt 6.
 \end{enumerate}
 
@@ -207,9 +207,9 @@ Ein Benutzer, der die Seite bereits besucht hat, möchte die Durchschnittswerte 
 \begin{enumerate} [noitemsep]
     \item /T230/ Starten der Schnittstelle.
     \item /T050/ Laden der Karte mit dem zuletzt genutzten Standort des Nutzers.
-    \item /T040/ Aktueller Standort wird in die Suchlesite eingegeben.
+    \item /T040/ Aktueller Standort wird in die Suchleiste eingegeben.
     \item /T150/ \glspl{Sensor} werden markiert.
-    \item /T300/ Anzeigen der isopolierten Daten.
+    \item /T300/ Anzeigen der \glslink{Interpolation}{interpolierten} Daten.
     \item Weiter mit Testszenario 1 Schritt 6.
 \end{enumerate}
 
@@ -219,14 +219,13 @@ Ein Benutzer, der die Seite bereits besucht hat, möchte sich über mögliche Ge
 \begin{enumerate} [noitemsep]
     \item /T230/ Starten der Schnittstelle.
     \item /T050/ Laden der Karte mit dem zuletzt genutzten Standort des Nutzers.
-    \item /T040/ Aktueller Standort wird in die Suchlesite eingegeben.
+    \item /T040/ Aktueller Standort wird in die Suchleiste eingegeben.
     \item /T150/ \glspl{Sensor} werden markiert.
     \item /T310/ Anzeigen der Gesundheitsrisiken für die gewünschte Umgebung.
     \item /T070/ Aufklappen der \gls{Toolbar}.
     \item /T310/ Laden einer Seite mit allgemeinen Erklärungen zu den Gesundheitsrisiken.
     \item /T220/ Schließen der Schnittstelle.
 \end{enumerate}
-
 
 \textbf{Testszenario 11: Zeitliche Entwicklung}
 \newline
