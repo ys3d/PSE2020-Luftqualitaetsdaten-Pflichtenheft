@@ -90,6 +90,10 @@ Für jede Funktion existiert mindestens ein Testfall.
     \hline
     /T330/ & Benutzbarkeit des Schiebebalken & Ermöglicht es die Karte zu dem gewünschten Zeitpunkt darzustellen & \\
     \hline
+    /T320/ & Seite mit Deutschlandkarte und Schiebebalken für das Anzeigen zeitlicher Entwicklung & \\
+    \hline
+    /T330/ & Benutzbarkeit des Schiebebalken & \\
+    \hline
 \end{tabularx}
 
 \subsection{Testszenarien}
@@ -163,14 +167,14 @@ Ein erfahrener Benutzer möchte auf die historischen Daten ,in Form eines Zeitdi
     \item /T220/ Schnittstelle schließen.
 \end{enumerate}
 
-\textbf{Testszenario 6: Dark Mode}
+\textbf{Testszenario 6: Dark-Mode}
 \newline
-Ein Benutzer möchte den Dark Mode aktivieren. Nach erfolgreicher Änderung wird mit Testszenario 1 weitergemacht.
+Ein Benutzer möchte den Dark-Mode aktivieren. Nach erfolgreicher Änderung wird mit Testszenario 1 weitergemacht.
 \begin{enumerate} [noitemsep]
     \item /T230/ Erneutes starten der Schnittstelle
     \item /T200/ Laden des zuletzt genutzten Standortes.
     \item /T070/ Aufklappen der \gls{Toolbar}.
-    \item /T270/ Änderung zum Dark Mode.
+    \item /T270/ Änderung zum Dark-Mode.
     \item Weitermachen mit Testszenario 1 Schritt 6.
 \end{enumerate}
 
@@ -203,9 +207,9 @@ Ein Benutzer, der die Seite bereits besucht hat, möchte die Durchschnittswerte 
 \begin{enumerate} [noitemsep]
     \item /T230/ Starten der Schnittstelle.
     \item /T050/ Laden der Karte mit dem zuletzt genutzten Standort des Nutzers.
-    \item /T040/ Aktueller Standort wird in die Suchlesite eingegeben.
+    \item /T040/ Aktueller Standort wird in die Suchleiste eingegeben.
     \item /T150/ \glspl{Sensor} werden markiert.
-    \item /T300/ Anzeigen der isopolierten Daten.
+    \item /T300/ Anzeigen der \glslink{Interpolation}{interpolierten} Daten.
     \item Weiter mit Testszenario 1 Schritt 6.
 \end{enumerate}
 
@@ -215,14 +219,13 @@ Ein Benutzer, der die Seite bereits besucht hat, möchte sich über mögliche Ge
 \begin{enumerate} [noitemsep]
     \item /T230/ Starten der Schnittstelle.
     \item /T050/ Laden der Karte mit dem zuletzt genutzten Standort des Nutzers.
-    \item /T040/ Aktueller Standort wird in die Suchlesite eingegeben.
+    \item /T040/ Aktueller Standort wird in die Suchleiste eingegeben.
     \item /T150/ \glspl{Sensor} werden markiert.
     \item /T310/ Anzeigen der Gesundheitsrisiken für die gewünschte Umgebung.
     \item /T070/ Aufklappen der \gls{Toolbar}.
     \item /T310/ Laden einer Seite mit allgemeinen Erklärungen zu den Gesundheitsrisiken.
     \item /T220/ Schließen der Schnittstelle.
 \end{enumerate}
-
 
 \textbf{Testszenario 11: Zeitliche Entwicklung}
 \newline
