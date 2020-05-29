@@ -9,7 +9,7 @@
 \subsection{Struktur Frontend}
 \label{Struktur Frontend}
 
-Als erste Ansicht der Webapplikation soll eine Deutschlandkarte mit farbigen Kartenoverlays geladen werden. Die farbigen Kartenoverlays geben hierbei Feinstaubdaten wieder.
+Als erste Ansicht der Webapplikation soll eine Deutschlandkarte mit farbigen \glspl{Kartenoverlay} geladen werden. Die farbigen \glspl{Kartenoverlay} geben hierbei \gls{Feinstaub}daten wieder.
 Die Webapplikation kann von einer ausklappbaren Toolbar aus bedient werden. Von dort aus sind die verschiedenen Seiten der Webapplikation erreichbar und deren Funktionen abrufbar. 
 Dabei bieten sich dem Nutzer die hier dargestellten Optionen. Erweiterte Funktionen sind in den folgenden Diagrammen grau hinterlegt.
 
@@ -64,7 +64,7 @@ child { node [optional] {Modus}
 \subsubsection{Aktuelle Daten (Startseite)}
 
 \enquote{Aktuelle Daten} zeigt eine Karte von Deutschland mit der der Nutzer interagieren kann. 
-Er kann in der Toolbar auswählen welche \gls{Luftqualitaetsdaten} er mit farbigen Kartenoverlay auf der Landkarte angezeigt haben möchte. 
+Er kann in der Toolbar auswählen welche \gls{Luftqualitaetsdaten} er mit farbigen \gls{Kartenoverlay} auf der Landkarte angezeigt haben möchte. 
 Dabei hat er die Auswahl zwischen Daten zu \gls{Feinstaub}, Lufttemperatur, Luftdruck und Luftfeuchtigkeit.
 Der Nutzer kann Städte durch den Stadtnamen oder die Postleitzahl auf der Landkarte suchen. Er kann Sensoren oder Punkte auf der Landkarte auswählen und Sensoroverviews zu ihnen erhalten. Dies soll durch die \gls{Sidebar} ermöglicht werden.
 Die \gls{Sidebar} ist ein funktionaler Teil der Seite \enquote{Aktuelle Daten}. Klickt der Nutzer auf einen \enquote{Sensor} oder einen Punkt auf der Karte öffnet sie sich automatisch.
@@ -88,7 +88,7 @@ child { node [optional] {Gesundheitsrisiken zu den Messwerten}};
 \subsubsection{Zeitliche Entwicklung}
 
 In \enquote{Zeitliche Entwicklung} soll es dem Nutzer ermöglicht werden sich mit der zeitlichen Entwicklung der Luftqualität auseinanderzusetzen. 
-Zu diesem Zweck sollen Feinstaubdaten als farbige Kartenoverlay auf einer Deutschlandkarte mit Zeitachse angezeigt werden. 
+Zu diesem Zweck sollen Feinstaubdaten als farbige \gls{Kartenoverlay} auf einer Deutschlandkarte mit Zeitachse angezeigt werden. 
 Der Nutzer durch das Verschieben eines Reglers auf der Zeitachse Messwerte an verschiedenen Zeitpunkten auf der Karte aufrufen.
 
 \begin{tikzpicture}[%
@@ -134,40 +134,51 @@ Der \enquote{Dark Mode} und der \enquote{Farbenblind Modus} unterscheiden sich d
 \begin{center}
 	\includegraphics[width=0.9\textwidth]{media/Startseite}\captionof{figure}{Startseite} 
 
-	\includegraphics[width=0.9\textwidth]{media/Menue}\captionof{figure}{Menue} 
+	\includegraphics[width=0.9\textwidth]{media/Menue}\captionof{figure}{Menü} 
+
+\vspace{1cm}
 	
 	\includegraphics[width=0.9\textwidth]{media/Aktuelle-Daten}\captionof{figure}{Aktuelle Daten} 
 
 	\includegraphics[width=0.9\textwidth]{media/Zeitliche-Entwicklung}\captionof{figure}{Zeitliche Entwicklung} 
+
+\vspace{1cm}
 	
 	\includegraphics[width=0.9\textwidth]{media/Definition-von-Feinstaub}\captionof{figure}{Definition von Feinstaub} 
 	
+	
 	\includegraphics[width=0.9\textwidth]{media/Gruende-Feinstaub}\captionof{figure}{Hauptgründe für Feinstaub in Deutschland} 
+	
+\vspace{1cm}	
 	
 	\includegraphics[width=0.9\textwidth]{media/Gesundheitsrisiken}\captionof{figure}{Gesundheitsrisiken von Feinstaub} 
 	
 	\includegraphics[width=0.9\textwidth]{media/SmartAQnet}\captionof{figure}{\gls{SmartAQnet}}
+
+\vspace{1cm}
 	
 	\includegraphics[width=0.9\textwidth]{media/DIY}\captionof{figure}{Verlinkung zu einer Bauanleitung für einen \gls{DIY}-\gls{Sensor}} 
 \end{center}
 
 \subsection{Screenshots Mobile Version}
 
-	\begin{minipage}[b]{.5\linewidth} % [b] => Ausrichtung an \caption
-		\includegraphics[width=0.7\textwidth]{media/Startseite-Mobile-Version}\captionof{figure}{Startseite} 
-	\end{minipage}
-	\hspace{.05\linewidth}% Abstand zwischen Bilder
-	\begin{minipage}[b]{.5\linewidth} % [b] => Ausrichtung an \caption
-		\includegraphics[width=0.7\textwidth]{media/Menue-Mobile-Version}\captionof{figure}{Menue} 
-	\end{minipage}
-	\begin{minipage}[b]{.5\linewidth} % [b] => Ausrichtung an \caption
-		\includegraphics[width=0.7\textwidth]{media/AktuelleDaten-Mobile-Version}\captionof{figure}{Aktuelle Daten} 
-	\end{minipage}
+\begin{figure}[H]
+    \begin{subfigure}[c]{0.5\textwidth}
+        \centering        
+        \includegraphics[scale=0.5]{media/Startseite-Mobile-Version}
+        \subcaption{Startseite}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.5\textwidth}
+        \centering        
+        \includegraphics[scale=0.5]{media/AktuelleDaten-Mobile-Version}
+        \subcaption{Menü}
+    \end{subfigure}
+\end{figure}
 
-
-	
-	
-
+\begin{center}
+    \includegraphics[scale=0.5]{media/AktuelleDaten-Mobile-Version}   
+    \captionof{figure}{Aktuelle Daten} 
+\end{center}
 
 \textbf{Anmerkung:}
 Es gilt zu beachten, dass die beschriebene Benutzeroberfläche in \autoref{Struktur Frontend} und \autoref{Screenshots} nur eine erste Annäherung an das Endprodukt ist. In der endgültige Version sind eventuell Abweichungen in der Darstellung der Daten möglich, jedoch ist die hier gegebene Struktur maßgeblich.
