@@ -5,84 +5,90 @@
 Für jede Funktion existiert mindestens ein Testfall.
 \newline
 \subsection{Basis-Testfälle}
-\begin{tabularx}{\textwidth}{| c | X | c |}
-	\hline
-	\textbf{Nr.} & 
-    \textbf{Beschreibung} &
-    \textbf{Funktion}\\
-    \hline
-     /T010/ & Die Schnittstelle wird in einem Browser geöffnet & /F010/, /F020/ \\
-     \hline
-     /T020/ & Laden der \glspl{Cookie} & /D040/, /D050/, /D060/ \\
-     \hline
-     /T030/ & Akzeptieren der \glspl{Cookie} &  /D040/, /D050/, /D060/ \\
-     \hline
-     /T040/ & Laden der Deutschlandkarte beim Erstbesuch& /F010/ \\
-     \hline
-     /T050/ & Laden einer Karte der zuletzt genutzten Umgebung des Benutzers & /D040/, /F010/ \\
-     \hline
-     /T060/ & Anzeigen der \gls{Toolbar} & /F020/ \\
-     \hline
-     /T070/ & Aufklappen der \gls{Toolbar} für Erweiterte Funktionen & /F020/ \\
-     \hline
-     /T080/ & Anzeigen der Suchleiste & /F020/ \\
-     \hline
-     /T090/ & Anzeigen einer Kartenlegende & /F100/ \\
-     \hline
-     /T100/ & In der Suchleiste wird eine Stadt eingegeben. & /F030/ \\
-     \hline
-     /T0110/ & In der Suchleiste wird eine Postleitzahl eingegeben &  /F030/ \\
-     \hline
-     /T120/ & Auswahl eines der vier \glspl{Kartenoverlay} & /F050/ \\
-     \hline
-     /T130/ & Anzeigen der \glspl{Kartenoverlay} & /F060/, /F070/ ,/F080/, /F090/ \\
-     \hline
-     /T140/ & Anzeigen der Daten von mehreren \glspl{Sensor} über die Karte & /F040/ \\
-     \hline
-     /T150/ & Markieren der \glspl{Sensor} im aktuellen Kartenausschnitt & /F040/ \\
-     \hline 
-     /T155/ & Selbstständiges markieren der \glspl{Sensor} & \\
-     \hline
-     /T160/ & Anzeigen der Daten eines Sensors &  /F130/, /F110/ \\
-     \hline
-     /T170/ & Aufrufen der Zeitdiagramme & /F130/, /F140/, /F200/ \\
-     \hline
-     /T180/ & Zoomen auf der Karte & /F015/ \\
-     \hline
-     /T190/ & Eingabe nicht bekannter Städte/Postleitzahlen in die Suchleiste & /F030/ \\
-     \hline
-     /T200/ & Speichern der Nutzerdaten für erneutes Laden der Schnittstelle zu einem anderen Zeitpunkt & /F160/, /F180/, /F230/ \\
-     \hline
-     /T210/ & Schließen der Daten der \glspl{Sensor} & \\
-     \hline
-     /T220/ & Schließen der Schnittstelle & /F110/ \\
-     \hline
-     /T230/ & Erneutes Laden der Schnittstelle & /F170/, /F190/, /F250/ \\
-     \hline
-    \end{tabularx}
-
-\subsection{Erweiterte-Testfälle}
-\begin{tabularx}{\textwidth}{| c | X | c |}
+\begin{tabularx}{\textwidth}{| c | X | c | X |}
     \hline
     \textbf{Nr.} & 
     \textbf{Beschreibung} &
+    \textbf{Ergebnis} &
+    \textbf{Funktion}\\
+    \hline
+    /T010/ & Die Schnittstelle wird in einem Browser geöffnet & Schnittstelle wird geöffnet & /F010/, /F020/ \\
+    \hline
+    /T020/ & Laden der \glspl{Cookie} & Ermöglicht das Akzeptieren der \glspl{Cookie} & /D040/, /D050/, /D060/ \\
+    \hline
+    /T030/ & Akzeptieren der \glspl{Cookie} & Ermöglicht das Speichern der Nutzereinstellungen & /D040/, /D050/, /D060/ \\
+    \hline
+    /T040/ & Laden der Deutschlandkarte beim Erstbesuch & Karte wird geladen & /F010/ \\
+     hline
+    /T050/ & Laden einer Karte der zuletzt genutzten Umgebung des Benutzers & Karte mit zuletzt genutzter Umgebung wird geladen & /D040/, /F010/ \\
+    \hline
+    /T060/ & Anzeigen der \gls{Toolbar} & Zeigt, dass es mehr Funktionen zum benutzen gibt & /F020/ \\
+    \hline
+    /T070/ & Aufklappen der \gls{Toolbar} für Erweiterte Funktionen & Ermöglicht die Wahl zwischen mehr Funktionen & /F020/ \\
+    \hline
+    /T080/ & Anzeigen der Suchleiste & Ermöglicht es einen bestimmten Standort zu suchen & /F020/ \\
+    \hline
+    /T090/ & Anzeigen einer Kartenlegende & Ermöglicht es einzuschätzen was die Werte bedeuten & /F100/ \\
+    \hline
+    /T100/ & In der Suchleiste wird eine Stadt eingegeben. & Zoomt die Karte an den gesuchten Standort ran & /F030/ \\
+    \hline
+    /T0110/ & In der Suchleiste wird eine Postleitzahl eingegeben & Zoomt die Karte an den gesuchten Standort ran &  /F030/ \\
+    \hline
+    /T120/ & Auswahl eines der vier \glspl{Kartenoverlay} & Ermöglicht es zwischen weiteren Overlays zu wählen & /F050/ \\
+    \hline
+    /T130/ & Anzeigen der \glspl{Kartenoverlay} & Erleichtert das erkennen der spezifischen Daten & /F060/, /F070/ ,/F080/, /F090/ \\
+    \hline
+    /T140/ & Anzeigen der Daten von mehreren \glspl{Sensor} über die Karte & Zeigt die Daten in der Sidebar an & /F040/ \\
+    \hline
+    /T150/ & Markieren der \glspl{Sensor} im aktuellen Kartenausschnitt & Ermöglicht es nur die Daten anzuzeigen die den Benutzer interessieren & /F040/ \\
+    \hline 
+    /T155/ & Selbstständiges markieren der \glspl{Sensor} & Ermöglicht es nur die Daten anzuzeigen die den Benutzer interessieren & \\
+    \hline
+    /T160/ & Anzeigen der Daten eines Sensors & Ermöglicht es den Benutzer zu informieren. Zeigt die vier Datensätze an &  /F130/, /F110/ \\
+    \hline
+    /T170/ & Aufrufen der Zeitdiagramme & Werden in der Sidebar dargestellt & /F130/, /F140/, /F200/ \\
+    \hline
+    /T180/ & Zoomen auf der Karte & Ermöglicht es genauer Sensoren auszuwählen & /F015/ \\
+    \hline
+    /T190/ & Eingabe nicht bekannter Städte/Postleitzahlen in die Suchleiste & Ermöglicht es, dass keine Suchanfragen gestellt werden, die nicht bearbeitet werden können & /F030/ \\
+    \hline
+    /T200/ & Speichern der Nutzerdaten für erneutes Laden der Schnittstelle zu einem anderen Zeitpunkt & Ermöglicht es das der Benutzer beim nächsten Mal nicht erneut einen Standort eingeben muss & /F160/, /F180/, /F230/ \\
+    \hline
+    /T210/ & Schließen der Daten der \glspl{Sensor} & Ermöglicht es wieder den ganzen Kartenausschnitt zu sehen & \\
+    \hline
+    /T220/ & Schließen der Schnittstelle & Beendet die Schnittstelle & /F110/ \\
+    \hline
+    /T230/ & Erneutes Laden der Schnittstelle & Läd die Schnittstelle mithilfe der Cookies erneut & /F170/, /F190/, /F250/ \\
+    \hline
+\end{tabularx}
+
+\subsection{Erweiterte-Testfälle}
+\begin{tabularx}{\textwidth}{| c | X | c | X |}
+    \hline
+    \textbf{Nr.} & 
+    \textbf{Beschreibung} &
+    \textbf{Ergebnis} &
     \textbf{Funktion}\\
     \hline 
-    /T240/ & Stresstest durch wildes drücken der Tasten & \\
+    /T240/ & Stresstest durch wildes drücken der Tasten & Ermöglicht es uns mögliche Fehler in der Kodierung zu finden & \\
     \hline      
-    /T250/ & Speichern der Nutzerdaten für erneutes Laden der Schnittstelle zu einem anderen Zeitpunkt & /F160/, /F180/, /F240/ \\
+    /T250/ & Speichern der Nutzerdaten für erneutes Laden der Schnittstelle zu einem anderen Zeitpunkt & Ermöglicht es schneller auf den präferierten Standort zuzugleichen & /F160/, /F180/, /F240/ \\
     \hline  
-    /T260/ & Aufrufen der \gls{DIY} Anleitungen für \glspl{Sensor} über die \gls{Toolbar} & /F020/ \\
+    /T260/ & Aufrufen der \GLS{DIY} Anleitungen für \glspl{Sensor} über die \gls{Toolbar} & Ermöglicht es dem Benutzer sich einen eigenen DIY Sensor zu bauen & /F020/ \\
     \hline
-    /T270/ & (De-)aktivieren des Dark-Mode über die \gls{Toolbar} & /F020/ \\
+    /T270/ & (De-)aktivieren des Dark-Mode über die \gls{Toolbar} & Ermöglicht es dem Benutzer die Schnittstelle auch bei schlechten Lichtbedingungen zu benutzen & /F020/ \\
     \hline
-    /T280/ & Änderung der Sprach-Einstellung über die \gls{Toolbar} & /F020/ \\
+    /T280/ & Änderung der Sprach-Einstellung über die \gls{Toolbar} & Ermöglicht es dem Benutzer die Schnittstelle auch bei schlechten Deutschkenntinssen zu benutzen& /F020/ \\
     \hline
-    /T290/ & (De-)aktivieren des Expertenmoduses & /F120/, /F220/ \\
+    /T290/ & (De-)aktivieren des Expertenmoduses & Ermöglicht es dem Benutzer sich spezifischer zu informieren & /F120/, /F220/ \\
     \hline
-    /T300/ & Anzeigen interpolierter Daten & /F060/, /F070/, /F080/, /F090/ \\
+    /T300/ & Anzeigen interpolierter Daten & Ermöglicht es auch Daten zu bekommen, die zwischen mehreren Sensoren liegen & /F060/, /F070/, /F080/, /F090/ \\
     \hline
-    /T310/ & Anzeigen von allgemeinen Informationen zu \glspl{Schadstoffwert}n und Gesundheitsrisiken & /F210/, /F230/ \\
+    /T310/ & Anzeigen von allgemeinen Informationen zu \glspl{Schadstoffwert}n und Gesundheitsrisiken & Ermöglicht es die Benutzer über die Werte zu informieren & /F210/, /F230/ \\
+    \hline
+    /T320/ & Seite mit Deutschlandkarte und Schiebebalken für das Anzeigen zeitlicher Entwicklung & Anschauliche Methode um die Entwicklung in ganz Deutschland zu zeigen & \\
+    \hline
+    /T330/ & Benutzbarkeit des Schiebebalken & Ermöglicht es die Karte zu dem gewünschten Zeitpunkt darzustellen & \\
     \hline
 \end{tabularx}
 
