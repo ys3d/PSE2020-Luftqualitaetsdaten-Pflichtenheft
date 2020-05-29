@@ -10,14 +10,14 @@
 \label{Struktur Frontend}
 
 Als erste Ansicht der Webapplikation soll eine Deutschlandkarte mit farbigen \glspl{Kartenoverlay} geladen werden. Die farbigen \glspl{Kartenoverlay} geben hierbei \gls{Feinstaub}daten wieder.
-Die Webapplikation kann von einer ausklappbaren Toolbar aus bedient werden. Von dort aus sind die verschiedenen Seiten der Webapplikation erreichbar und deren Funktionen abrufbar. 
+Die Webapplikation kann von einer ausklappbaren \gls{Toolbar} aus bedient werden. Von dort aus sind die verschiedenen Seiten der Webapplikation erreichbar und deren Funktionen abrufbar. 
 Dabei bieten sich dem Nutzer die hier dargestellten Optionen. Erweiterte Funktionen sind in den folgenden Diagrammen grau hinterlegt.
 
 \begin{tikzpicture}[%
 grow via three points={one child at (0.5,-0.7) and
 	two children at (0.5,-0.7) and (0.5,-1.4)},
 edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}]
-\node {Toolbar}
+\node {\gls{Toolbar}}
 child{ node {Aktuelle Daten (Startseite)}
 	child { node {\gls{Luftqualitaetsdaten}}
 		child { node {\gls{Feinstaub} (Startseite)}}
@@ -64,10 +64,10 @@ child { node [optional] {Modus}
 \subsubsection{Aktuelle Daten (Startseite)}
 
 \enquote{Aktuelle Daten} zeigt eine Karte von Deutschland mit der der Nutzer interagieren kann. 
-Er kann in der Toolbar auswählen welche \gls{Luftqualitaetsdaten} er mit farbigen \gls{Kartenoverlay} auf der Landkarte angezeigt haben möchte. 
+Er kann in der \gls{Toolbar} auswählen welche \gls{Luftqualitaetsdaten} er mit farbigen \gls{Kartenoverlay} auf der Landkarte angezeigt haben möchte. 
 Dabei hat er die Auswahl zwischen Daten zu \gls{Feinstaub}, Lufttemperatur, Luftdruck und Luftfeuchtigkeit.
-Der Nutzer kann Städte durch den Stadtnamen oder die Postleitzahl auf der Landkarte suchen. Er kann Sensoren oder Punkte auf der Landkarte auswählen und Sensoroverviews zu ihnen erhalten. Dies soll durch die \gls{Sidebar} ermöglicht werden.
-Die \gls{Sidebar} ist ein funktionaler Teil der Seite \enquote{Aktuelle Daten}. Klickt der Nutzer auf einen \enquote{Sensor} oder einen Punkt auf der Karte öffnet sie sich automatisch.
+Der Nutzer kann Städte durch den Stadtnamen oder die Postleitzahl auf der Landkarte suchen. Er kann Sensoren oder Punkte auf der Landkarte auswählen und \glspl{Sensoroverview} zu ihnen erhalten. Dies soll durch die \gls{Sidebar} ermöglicht werden.
+Die \gls{Sidebar} ist ein funktionaler Teil der Seite \enquote{Aktuelle Daten}. Wählt der Nutzer einen \gls{Sensor} oder einen Punkt auf der Karte aus öffnet sie sich automatisch.
 
 \begin{tikzpicture}[%
 grow via three points={one child at (0.5,-0.7) and
@@ -87,10 +87,10 @@ child { node [optional] {Gesundheitsrisiken zu den Messwerten}};
 
 \subsubsection{Zeitliche Entwicklung}
 
-In \enquote{Zeitliche Entwicklung} soll es dem Nutzer ermöglicht werden sich mit der zeitlichen Entwicklung der Luftqualität auseinanderzusetzen. 
-Zu diesem Zweck sollen Feinstaubdaten als farbige \gls{Kartenoverlay} auf einer Deutschlandkarte mit Zeitachse angezeigt werden. 
-Der Nutzer durch das Verschieben eines Reglers auf der Zeitachse Messwerte an verschiedenen Zeitpunkten auf der Karte aufrufen.
-
+In \enquote{Zeitliche Entwicklung} soll es dem Nutzer ermöglicht werden sich mit der zeitlichen Entwicklung der Luftqualität in Deutschland auseinanderzusetzen. Das hierbei gewählte Intervall entspricht den zur Verfügung stehenden Messdaten.
+Der Nutzer kann durch das Verschieben eines Reglers auf einer Zeitachse \gls{Feinstaub}daten an verschiedenen Zeitpunkten auf der Deutschlandkarte aufrufen. Diese werden mithilfe von farbigen \glspl{Kartenoverlay} visualisiert.
+\\
+\\
 \begin{tikzpicture}[%
 grow via three points={one child at (0.5,-0.7) and
 	two children at (0.5,-0.7) and (0.5,-1.4)},
@@ -170,7 +170,7 @@ Der \enquote{Dark Mode} und der \enquote{Farbenblind Modus} unterscheiden sich d
     \end{subfigure}
     \begin{subfigure}[c]{0.5\textwidth}
         \centering        
-        \includegraphics[scale=0.5]{media/AktuelleDaten-Mobile-Version}
+        \includegraphics[scale=0.5]{media/Menue-Mobile-Version}
         \subcaption{Menü}
     \end{subfigure}
 \end{figure}
