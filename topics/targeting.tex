@@ -1,25 +1,17 @@
 \section{Zielbestimmungen}
 \subsection{Musskriterien}
  \begin{itemize}
-	\item Der Nutzer kann auf die Webapplikation über einen Webbrowser zugreifen. 
-	Der Zugriff soll sowohl über den Computer als auch über Handys möglich sein.
-	\item Als erste Seite soll eine Landkarte geladen werden.
-	Diese Karte soll Aufschluss über die \gls{Feinstaub}messwerte zu einem in der näheren Vergangenheit gemessenen Zeitpunkt geben.
-	\item Der Nutzer soll auf einer \gls{Toolbar} auswählen können welche \gls{Luftqualitaetsdaten} auf der Landkarte angezeigt werden. 
-	Der Nutzer hierbei die Auswahl zwischen den \gls{Luftqualitaetsdaten} Luftfeuchtigkeit, Luftdruck, Temperatur und \gls{Feinstaub}.
-	\item Die unterschiedlichen \gls{Luftqualitaetsdaten} sollen mit farbigen \glspl{Kartenoverlay} auf der Karte dargestellt werden. Dabei soll für Temperatur- und Feinstaubwerte eine rot-grün Skala und Luftdruck und Luftfeuchtigkeit in einer gelb-blau Skala verwendet werden. \gls{Feinstaub}messwerte sollen dabei hervorgehoben werden falls sie die gesetzlich vorgeschriebenen Grenzwerte überschreiten.
-	Es gibt eine Legende für die verwendeten Farben. 
+	\item Der Nutzer kann auf die Webapplikation über einen Webbrowser zugreifen. Der Zugriff soll sowohl über einen \gls{Standard-PC} als auch über Handys möglich sein.
+	\item Als erste Seite soll eine Landkarte geladen werden. Diese Karte soll Aufschluss über die \gls{Feinstaub}messwerte zu einem relativ aktuellen Zeitpunkt geben.
+	\item Der Nutzer soll auf einer \gls{Toolbar} auswählen können welche \gls{Luftqualitaetsdaten} auf der Landkarte angezeigt werden. Der Nutzer hierbei die Auswahl zwischen den \gls{Luftqualitaetsdaten} Luftfeuchtigkeit, Luftdruck, Temperatur und \gls{Feinstaub}.
+	\item Die unterschiedlichen \gls{Luftqualitaetsdaten} sollen mit farbigen \glspl{Kartenoverlay} auf der Karte dargestellt werden. Dabei soll für Temperatur- und \gls{Feinstaub}werte eine rot-grün Skala und für Luftdruck und Luftfeuchtigkeit eine gelb-blau Skala verwendet werden. \gls{Feinstaub}messwerte sollen hervorgehoben werden falls sie die gesetzlich vorgeschriebenen Grenzwerte überschreiten. Es gibt eine Legende für die verwendeten Farben. 
 	\item Die Messwerte sollen durch \glslink{Interpolation}{interpolierte} Daten kontinuierlich dargestellt werden.
-	\item Der Nutzer kann auf einen \gls{Sensor} markieren und bekommt dessen Messwerte in einem Diagramm und den Sensortyp angezeigt.
-	\item Der Nutzer kann auf einen Punkt auf der Landkarte markieren und bekommt dessen \glslink{Interpolation}{interpolierte} Messwerte als Diagramm angezeigt.
-	\item Der Nutzer kann eine Stadt durch den Stadtnamen oder die Postleitzahl suchen. 
-	Die Webapplikation ändert daraufhin den Landkartenausschnitt und markiert die gesuchte Stadt auf der Karte.
-	\item  Zu einem \gls{Sensor} oder einem Punkt auf der Landkarte kann der Nutzer ein Zeitintervall angeben. Die Webapplikation zeigt daraufhin für das gegebenen Intervall 
-	die zeitliche Entwicklung der Luftqualität als Menge-Zeit Diagramm an.
-	\item Zu einem \gls{Sensor} oder einem Punkt auf der Landkarte kann der Nutzer ein Datum filtern. 
-	Die Webapplikation zeigt daraufhin die entsprechenden Messwerte zur Luftqualität an.
-	\item Auf der Webapplikation soll ebenfalls eine Zeitachse dargestellt werden. 
-	Der Nutzer kann hier durch das Verschieben eines Reglers frühere Messwerte zu Luftqualität abrufen. 
+	\item Zusätzlich werden die \glspl{Sensor} und Messstationen auf dem aktuellen Kartenausschnitt hervorgehoben.
+	\item Der Nutzer kann einen \gls{Sensor} auswählen und bekommt dessen Messwerte zu \gls{Feinstaub}, Luftdruck, Luftfeuchtigkeit, Temperatur angezeigt. Ebenfalls wiedergegeben wird die zeitliche Entwicklung der \gls{Sensor}messwerte in einem Diagramm, sowie Informationen zum Sensortyp und ob es sich um eine offizielle Messstation handelt.
+	\item Der Nutzer kann einen Punkt auf der Landkarte auswählen und bekommt dessen \glslink{Interpolation}{interpolierte} Messwerte zu \gls{Feinstaub}, Luftdruck, Luftfeuchtigkeit, Temperatur angezeigt. Hier soll dem Nutzer ebenfalls ein Diagramm zur zeitlichen Entwicklung der \glslink{Interpolation}{interpolierten} Messwerte zur Verfügung stehen.
+	\item Der Nutzer soll das Zeitintervall für die Diagramme bestimmen können. Es soll auch möglich sein nach einem Datum zu filtern und ausschließlich diese Messwerte zu erhalten.
+	\item Der Nutzer kann eine Stadt durch den Stadtnamen oder die Postleitzahl suchen. Die Webapplikation ändert daraufhin den Landkartenausschnitt und markiert die gesuchte Stadt auf der Karte.
+	\item Auf einer weiteren Seite der Webapplikation soll eine Zeitachse auf einer Landkarte dargestellt werden. Der Nutzer kann hier durch das Verschieben eines Reglers frühere Messwerte zu \gls{Feinstaub} abrufen. Diese werden ebenfalls mit farbigen \glspl{Kartenoverlay} visualisiert.
 	\item Die Webapplikation enthält eine Definition für \gls{Feinstaub}.
 	\item Die Webapplikation enthält eine Verlinkung zum Projekt \gls{SmartAQnet}. 
 \end{itemize}
@@ -27,14 +19,12 @@
    \begin{itemize}
    	\item Die Webapplikation soll die Hauptgründe für \gls{Feinstaub} in Deutschland in einer Graphik darstellen.
    	\item Die Webapplikation soll die Gesundheitsrisiken, die durch \gls{Feinstaub} auftreten, in einer Graphik darstellen. 
-	\item Der Nutzer kann den \gls{Feinstaub}messwert eines Sensors oder eines Punkts auf der Karte auswählen. 
-	Die Webapplikation zeigt daraufhin an welche Gesundheitsrisiken bei diesem spezifischen Messwert kurzfristig und langfristig auftreten.
-	\item Der Nutzer kann den \gls{Feinstaub}messwert eines Sensors oder eines Punkts auf der Karte auswählen. 
-	Die Webapplikation zeigt ihm daraufhin ein alltägliches Szenario an, das eine äquivalente \gls{Feinstaub}belastung verursacht.
+	\item Zu dem \gls{Feinstaub}messwert eines Sensors oder eines Punkts auf der Karte kann sich der Nutzer die hierfür spezifischen langfristigen und kurzfristigen Gesundheitsrisiken aufzeigen lassen.
+	\item Zu dem \gls{Feinstaub}messwert eines Sensors oder eines Punkts auf der Karte kann sich der Nutzer ein alltägliches Szenario wiedergegeben lassen, das eine äquivalente \gls{Feinstaub}belastung verursacht.
 	\item Auf Wunsch des Nutzers soll die Webapplikation dessen Standort feststellen und die Karte entsprechend zentrieren.
 	\item Durch eine Teilen-Funktion soll der Nutzer Messwerte in den sozialen Netzwerken verbreiten können.
 	\item Beim Verlassen der Webapplikation soll der zuletzt betrachtete Kartenausschnitt gespeichert werden. Beim erneuten Betreten der Seite soll dieser Kartenausschnitt wiederhergestellt werden.
-	\item Die Webapplikation soll eine Hilfefunktion haben, die die verschiedenen Interaktionsmöglichkeiten erklärt.
+	\item Die Webapplikation soll eine Hilfefunktion haben, welche die verschiedenen Interaktionsmöglichkeiten erklärt.
 	\item Die Webapplikation enthält einen Link zu einer Bauanleitung für einen \gls{DIY}-\gls{Sensor}.
 	\item Der Nutzer kann auswählen, ob ihm die Webapplikation in deutscher oder englischer Sprache angezeigt wird.
 	\item Der Nutzer soll, als zusätzliche Anzeige, die Webapplikation in einem Dark-Mode oder in einem Farbenblind-Modus benutzen können.
