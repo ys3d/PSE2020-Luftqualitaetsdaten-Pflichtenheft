@@ -1,0 +1,155 @@
+%% Beamer-Klasse im korrekten Modus
+\documentclass{beamer}
+%\documentclass[18pt,parskip]{beamer}
+
+%% SLIDE FORMAT
+
+% use 'beamerthemekit' for standard 4:3 ratio
+% for widescreen slides (16:9), use 'beamerthemekitwide'
+
+\usepackage{../templates/KIT-slides/beamerthemekitwide}
+%\usepackage{../templates/KIT-slides/beamerthemekitwide}
+
+%% TITLE PICTURE
+
+% if a custom picture is to be used on the title page, copy it into the 'logos'
+% directory, in the line below, replace 'mypicture' with the 
+% filename (without extension) and uncomment the following line
+% (picture proportions: 63 : 20 for standard, 169 : 40 for wide
+% *.eps format if you use latex+dvips+ps2pdf, 
+% *.jpg/*.png/*.pdf if you use pdflatex)
+
+\titleimage{../figures/titleimage/brain}
+
+%% TITLE LOGO
+
+% for a custom logo on the front page, copy your file into the 'logos'
+% directory, insert the filename in the line below and uncomment it
+
+\newcommand{\titlelogo}{../../media/logoHQ.png}
+%\titlelogo{../media/logoHQ.png}
+
+% (*.eps format if you use latex+dvips+ps2pdf,
+% *.jpg/*.png/*.pdf if you use pdflatex)
+
+%% TikZ INTEGRATION
+
+% use these packages for PCM symbols and UML classes
+% \usepackage{templates/tikzkit}
+% \usepackage{templates/tikzuml}
+
+%\usepackage{tikz}
+%\usetikzlibrary{matrix}
+%\usetikzlibrary{arrows.meta}
+%\usetikzlibrary{automata}
+%\usetikzlibrary{tikzmark}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Libertine font (Original GBI font)
+\usepackage[mono=false]{libertine}
+%\renewcommand*\familydefault{\sfdefault}  %% Only if the base font of the document is to be sans serif
+
+%% Schönere Schriften
+\usepackage[TS1,T1]{fontenc}
+
+%% Deutsche Silbentrennung und Beschriftungen
+\usepackage[ngerman]{babel}
+
+%% UTF-8-Encoding
+\usepackage[utf8]{inputenc}
+
+%% Bibliotheken für viele mathematische Symbole
+\usepackage{amsmath, amsfonts, amssymb}
+
+%% Anzeigetiefe für Inhaltsverzeichnis: 1 Stufe
+\setcounter{tocdepth}{1}
+
+%% Hyperlinks
+\usepackage{hyperref}
+% I don't know why, but this works and only includes sections and NOT subsections in the pdf-bookmarks.
+\hypersetup{bookmarksdepth=subsection}
+
+%% remove navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%% switch between "ngerman" and "english" for German/English style date and logos
+\selectlanguage{ngerman}
+
+\usepackage{xcolor}
+
+%% for invisible pause texts instead of dimming
+\setbeamercovered{invisible}
+
+\usepackage[german=swiss]{csquotes}
+
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+%\usepackage{tikz}
+%\usetikzlibrary{arrows,automata,positioning}
+
+\usepackage{xspace}
+
+\usepackage{graphicx}
+
+\usepackage{verbatim}
+
+\usepackage{algorithm}
+\usepackage[]{algpseudocode}
+\algrenewcommand{\algorithmiccomment}[1]{\hfill\(//\) #1}
+
+\usepackage[outdir=./]{epstopdf}
+
+% Problem: disabled itemize-icons
+%\usepackage{enumitem}
+% %\setlist[enumerate]{topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex}
+% \setlist[itemize]{noitemsep, nolistsep}
+% \setlist[enumerate]{noitemsep, nolistsep}
+
+
+\AtBeginDocument{
+\abovedisplayskip=0pt
+\belowdisplayskip=0pt
+\abovedisplayshortskip=0pt
+\belowdisplayshortskip=0pt
+}
+%%%%%%%%%%%% Slides %%%%%%%%%%%%%%%%
+
+%% Titelinformationen
+\author{Katharina Biernacka \and Maria Kraus \and Fabian Reinbold \and Daniel Schild}
+\institute{Fakultät für Informatik}
+%\date{\mydate}
+
+%% Titel einfügen
+\newcommand{\titleframe}{\frame{\titlepage}\addtocounter{framenumber}{-1}}
+
+%% Emph be queen
+\setbeamercolor{emph}{fg=kit-green100}
+\renewcommand<>{\emph}[1]{%
+  {\usebeamercolor[fg]{emph}\only#2%{\itshape}
+  #1}%
+}
+
+%% Roadmap frame
+%table of contents
+\newcommand{\roadmap}{
+	\frame{\frametitle{Roadmap}\tableofcontents}}
+
+ \AtBeginSection[]{%
+\begin{frame}
+	\frametitle{Roadmap}
+	\tableofcontents[currentsection]
+\end{frame}%\addtocounter{framenumber}{-1}
+}
+
+
+%% ShowMessage frame
+\newcommand{\showmessage}[1]{\frame{\frametitle{\phantom{1em}}\centering\textbf{#1}}}
+
+%% Fragen
+\newcommand{\questionframe}{\showmessage{Fragen?}}
+
+%% Lastframe
+\newcommand{\lastframe}{\showmessage{Vielen Dank für Eure Aufmerksamkeit! \\Bis nächste Woche :)}}
+
+\input{../templates/makros.tex}
